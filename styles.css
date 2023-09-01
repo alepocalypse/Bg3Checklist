@@ -86,9 +86,11 @@ a:hover {
 }
 /* Style the area headers */
 .area-header {
+    font-size: 20px
+    color: #0fb4bf; /* Off-white color */
     cursor: pointer; /* Add a pointer cursor for interactivity */
     margin: 10px 0; /* Add spacing between area headers */
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* Style the area-checklist to hide by default */
