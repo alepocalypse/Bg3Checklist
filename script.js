@@ -63,7 +63,7 @@ function renderChecklist() {
                         const checklistItem = document.createElement('li');
                         const checkbox = document.createElement('input');
                         checkbox.type = 'checkbox';
-
+                    
                         // Find the saved state for this checklist item
                         const savedItem = savedItems.find((saved) => saved.text === item.text);
                         if (savedItem) {
@@ -71,15 +71,15 @@ function renderChecklist() {
                         } else {
                             checkbox.checked = item.completed;
                         }
-
+                    
                         const label = document.createElement('label');
                         let labelText = item.text;
-
+                    
                         if (labelText.includes('<span class=\'spoiler\'>')) {
                             const spoilerText = document.createElement('span');
                             spoilerText.innerHTML = labelText;
                             const spoilerSpan = spoilerText.querySelector('.spoiler');
-
+                    
                             if (savedItem && savedItem.spoilerRevealed) {
                                 spoilerSpan.classList.remove('spoiler');
                                 checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
@@ -91,21 +91,22 @@ function renderChecklist() {
                                     saveChecklist();
                                 });
                             }
-
+                    
+                            // Set labelText to the updated spoilerText
                             labelText = spoilerText.innerHTML;
                         }
-
+                    
                         label.innerHTML = labelText;
-
+                    
                         // Add the checkbox before the label
                         checklistItem.appendChild(checkbox);
-
+                    
                         // Add the label to the checklist item
                         checklistItem.appendChild(label);
-
+                    
                         // Add the checklist item to the checklist div
                         checklistDiv.appendChild(checklistItem);
-                    });
+                    });                    
 
                     // Add the area item to the areas list
                     areasList.appendChild(areaItem);
