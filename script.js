@@ -130,7 +130,15 @@ function renderChecklist() {
         });
 }
 
-// The saveChecklist function remains the same
+function saveChecklist() {
+    const checklistItems = [...document.querySelectorAll('input[type="checkbox"]')].map((checkbox) => ({
+        text: checkbox.nextElementSibling.textContent,
+        completed: checkbox.checked,
+        spoilerRevealed: checkbox.nextElementSibling.classList.contains('spoiler-revealed'),
+    }));
+
+    localStorage.setItem('checklistItems', JSON.stringify(checklistItems));
+}
 
 // Event listener for marking items as completed
 const checklistContainer = document.getElementById('checklist');
