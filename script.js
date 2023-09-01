@@ -1,4 +1,3 @@
-// Function to fetch JSON data and render the checklist
 function renderChecklist() {
     const checklistContainer = document.getElementById('checklist');
 
@@ -74,6 +73,16 @@ function renderChecklist() {
 
                         const label = document.createElement('label');
                         let labelText = item.text;
+
+                        // Check if the item has a URL
+                        if (item.url) {
+                            const urlIcon = document.createElement('a');
+                            urlIcon.href = item.url;
+                            urlIcon.target = '_blank'; // Open the link in a new tab
+                            urlIcon.textContent = '\u127760'; // Unicode for the globe icon
+                            urlIcon.style.paddingLeft = '5px'; // Add some space between text and icon
+                            label.appendChild(urlIcon);
+                        }
 
                         // Check if the item has spoiler tags
                         if (labelText.includes('<span class=\'spoiler\'>')) {
