@@ -125,3 +125,17 @@ a:hover {
 .area-checklist li {
     margin: 5px 0;
 }
+
+
+/* Style the page container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the container spans the full viewport height */
+}
+
+/* Center the footer */
+footer {
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom of the container */
+}
