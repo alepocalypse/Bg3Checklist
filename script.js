@@ -17,9 +17,29 @@ function renderChecklist() {
                 const areasList = document.createElement('ul');
                 act.areas.forEach((area) => {
                     const areaItem = document.createElement('li');
-                    areaItem.textContent = area.name;
 
-                    const checklist = document.createElement('ul');
+                    // Create a header element for the area
+                    const areaHeader = document.createElement('h2');
+                    areaHeader.textContent = area.header || area.name; // Use the header if available, otherwise use the name
+                    areaHeader.classList.add('area-header'); // Add a class for styling
+
+                    // Create a div to contain the checklist items
+                    const checklistDiv = document.createElement('div');
+                    checklistDiv.classList.add('area-checklist'); // Add a class for styling
+                    checklistDiv.style.display = 'none'; // Initially hide the checklist
+
+                    areaHeader.addEventListener('click', () => {
+                        // Toggle the checklist visibility when the header is clicked
+                        if (checklistDiv.style.display === 'none') {
+                            checklistDiv.style.display = 'block';
+                        } else {
+                            checklistDiv.style.display = 'none';
+                        }
+                    });
+
+                    areaItem.appendChild(areaHeader);
+                    areaItem.appendChild(checklistDiv);
+
                     area.checklist.forEach((item) => {
                         const checklistItem = document.createElement('li');
                         const checkbox = document.createElement('input');
@@ -65,10 +85,9 @@ function renderChecklist() {
 
                         checklistItem.appendChild(checkbox);
                         checklistItem.appendChild(label);
-                        checklist.appendChild(checklistItem);
+                        checklistDiv.appendChild(checklistItem);
                     });
 
-                    areaItem.appendChild(checklist);
                     areasList.appendChild(areaItem);
                 });
 
