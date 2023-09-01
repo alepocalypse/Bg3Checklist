@@ -1,35 +1,52 @@
 {
     "acts": [
         {
-            "name": "Act 1",
+"name": "Act 1",
             "areas": [
                 {
-                    "name": "Nautiloid",
+                    "name": "Aboard Nautiloid",
                     "checklist": [
-                        { "text": "Save <span class='spoiler'>The Brain</span> (Room 2)", "completed": false },
-                        { "text": "Free Shadowheart", "completed": false },
-                        { "text": "Defeat Commander Zhalk, obtain Sword", "completed": false }
+                        { "text": "Save the brain.", "completed": false },
+                        { "text": "Free Shadowheart (Necessary to recruit her).", "completed": false },
+                        { "text": "Defeat Commander Zhalk and obtain his sword.", "completed": false }
                     ]
                 },
                 {
-                    "name": "Nautiloid Crash (South East)",
+                    "name": "Nautiloid Crash",
                     "checklist": [
-                        { "text": "Wake up Shadowheart", "completed": false },
-                        { "text": "Recruit Astarion", "completed": false }
+                        { "text": "Free Lae’zel (recruit her as a companion).", "completed": false },
+                        { "text": "Find Astarion (recruit him as a companion).", "completed": false },
+                        { "text": "Wake up Shadowheart (recruit her as a companion).", "completed": false },
+                        { "text": "Free Gale from the rift (recruit him as a companion).", "completed": false },
+                        { "text": "Unlock Speak With Dead and Talk With Animal spells. You’ll constantly use these throughout the game.", "completed": false },
+                        { "text": "Investigate Dank Crypt (to the East of your starting point) and find Withers - This will allow you to reclass at any time at camp for 100 Gold.", "completed": false }
                     ]
                 },
                 {
-                    "name": "Druid's Grove (North East)",
+                    "name": "Emerald Grove",
                     "checklist": [
-                        { "text": "Deal with the Attack", "completed": false },
-                        { "text": "Save Tiefling from an assassin (above the gate)", "completed": false }
+                        { "text": "Go to Druid’s Grove and meet Will, who’s training children with swords. (Recruit him as a companion).", "completed": false },
+                        { "text": "Speak to Volo, which will make him move to the Goblin Camp. Then speak to him at the Goblin Camp, save him, and he’ll move to your camp.", "completed": false },
+                        { "text": "Talk to Khaga and Rath. Learn about Khaga’s plan for the ritual. Rath will ask you to save Halsin.", "completed": false },
+                        { "text": "Talk to the Strange Ox at Druid’s Grove.", "completed": false },
+                        { "text": "Talk to Alfira and learn how to play an instrument.", "completed": false },
+                        { "text": "Talk to Dammon (he’s needed for Karlach’s companion quest after recruiting).", "completed": false },
+                        { "text": "Save the Tiefling from the Bugbear Assassin.", "completed": false },
+                        { "text": "Rescue the child from the Harpies. Found to the Northeast of the Grove’s heart, keep going until you hear singing.", "completed": false },
+                        { "text": "Absolute Cultists ambush you near the Grove.", "completed": false }
                     ]
                 },
                 {
-                    "name": "Blighted Village (Central)",
+                    "name": "Blighted Village",
                     "checklist": [
-                        { "text": "Find Dog, northeast of village", "completed": false },
-                        { "text": "Interrupt a dangerous liaison (Barn north of the village)", "completed": false }
+                        { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home, and then finish them.", "completed": false },
+                        { "text": "Find the book Necromancy of Thay.", "completed": false },
+                        { "text": "Climb into the well and defeat the Astral Spider Queen and its children.", "completed": false },
+                        { "text": "Rescue Barcus the Gnome from the Goblins and Windmill.", "completed": false },
+                        { "text": "Find Scratch the Dog, who’s roaming just outside the village, and lead him to your camp.", "completed": false },
+                        { "text": "Vanquish or recruit the trio of Ogres.", "completed": false },
+                        { "text": "In the barn on the North side of town, there’s an “interesting” scene between a Bugbear and Ogre.", "completed": false },
+                        { "text": "A cave outside of the village has an Owlbear and its cub you can interact with.", "completed": false }
                     ]
                 }
             ]
