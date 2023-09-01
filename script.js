@@ -1,7 +1,3 @@
-const checklist = document.getElementById('checklist');
-const taskInput = document.getElementById('taskInput');
-const addTaskBtn = document.getElementById('addTaskBtn');
-
 import checklistData from './ChecklistData.js';
 
 function saveChecklist() {
@@ -59,7 +55,7 @@ actsContainer.addEventListener('change', (event) => {
                 area.checklist.forEach((item) => {
                     if (item.text === text) {
                         item.completed = event.target.checked;
-                        // Save the data to localStorage or your backend here
+                        saveChecklist();
                     }
                 });
             });
