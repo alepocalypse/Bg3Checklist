@@ -58,58 +58,52 @@ function renderChecklist() {
                     areaItem.appendChild(areaHeader);
                     areaItem.appendChild(checklistDiv);
 
-                    area.checklist.forEach((item) => {
-        const checklistItem = document.createElement('li');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
+area.checklist.forEach((item) => {
+    const checklistItem = document.createElement('li');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
 
-        // Find the saved state for this checklist item
-        const savedItem = savedItems.find((saved) => saved.text === item.text);
-        if (savedItem) {
-            checkbox.checked = savedItem.completed;
+    // Find the saved state for this checklist item
+    const savedItem = savedItems.find((saved) => saved.text === item.text);
+    if (savedItem) {
+        checkbox.checked = savedItem.completed;
+    } else {
+        checkbox.checked = item.completed;
+    }
+
+    const label = document.createElement('label');
+    let labelText = item.text;
+
+    if (labelText.includes('<span class=\'spoiler\'>')) {
+        const spoilerText = document.createElement('span');
+        spoilerText.innerHTML = labelText;
+        const spoilerSpan = spoilerText.querySelector('.spoiler');
+
+        if (savedItem && savedItem.spoilerRevealed) {
+            spoilerSpan.classList.remove('spoiler');
         } else {
-            checkbox.checked = item.completed;
-        }
-
-        const label = document.createElement('label');
-        let labelText = item.text;
-
-        if (labelText.includes('<span class=\'spoiler\'>')) {
-            const spoilerText = document.createElement('span');
-            spoilerText.innerHTML = labelText;
-            const spoilerSpan = spoilerText.querySelector('.spoiler');
-            spoilerSpan.classList.add('spoiler');
-
-            if (savedItem && savedItem.spoilerRevealed) {
+            // Add a click event listener to reveal the spoiler
+            spoilerSpan.addEventListener('click', () => {
                 spoilerSpan.classList.remove('spoiler');
-            } else {
-                // Add a click event listener to reveal the spoiler
-                spoilerSpan.addEventListener('click', () => {
-                    spoilerSpan.classList.remove('spoiler');
-                    checkbox.nextElementSibling.classList.remove('spoiler');
-                    saveChecklist();
-                });
-            }
-
-            label.appendChild(spoilerText);
-        } else {
-            // If no spoiler, display the label text as it is
-            label.textContent = labelText;
+                checkbox.nextElementSibling.classList.remove('spoiler');
+                saveChecklist();
+            });
         }
 
-        // Add the checkbox before the label
-        checklistItem.appendChild(checkbox);
+        labelText = spoilerText.innerHTML;
+    }
 
-        // Add the label to the checklist item
-        checklistItem.appendChild(label);
+    label.innerHTML = labelText;
 
-        // Add the checklist item to the checklist div
-        checklistDiv.appendChild(checklistItem);
-    });
+    // Add the checkbox before the label
+    checklistItem.appendChild(checkbox);
 
-                    // Add the area item to the areas list
-                    areasList.appendChild(areaItem);
-                });
+    // Add the label to the checklist item
+    checklistItem.appendChild(label);
+
+    // Add the checklist item to the checklist div
+    checklistDiv.appendChild(checklistItem);
+});
 
                 // Add the areas list to the areas list div
                 areasListDiv.appendChild(areasList);
