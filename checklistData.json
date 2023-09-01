@@ -5,6 +5,7 @@
             "areas": [
                 {
                     "name": "Nautiloid",
+                    "header": "Area 1 Header",
                     "checklist": [
                         { "text": "Save the <span class='spoiler'> brain </span> in 2nd Room", "completed": false },
                         { "text": "Free Shadowheart", "completed": false },
@@ -13,6 +14,7 @@
                 },
                 {
                     "name": "Crash Site",
+                    "header": "Area 2 Header",
                     "checklist": [
                         { "text": "Recruit Shadowheart", "completed": false },
                         { "text": "Recruit Astarion", "completed": false },
@@ -23,6 +25,7 @@
                 },
                 {
                     "name": "Druids Grove",
+                    "header": "Area 3 Header",
                     "checklist": [
                         { "text": "Defend the Grove", "completed": false },
                         { "text": "Recruit Wyll", "completed": false },
@@ -38,6 +41,7 @@
                 },
                 {
                     "name": "Blighted Village",
+                    "header": "Area 4 Header",
                     "checklist": [
                         { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home", "completed": false },
                         { "text": "Search the Herbalist <span class='spoiler'> and get the book Necromancy of Thay</span>", "completed": false },
@@ -51,6 +55,7 @@
                 },
                 {
                     "name": "Risen Road",
+                    "header": "Area 5 Header",
                     "checklist": [
                         { "text": "Recruit Karlach", "completed": false },
                         { "text": "Handle Karlach's foes", "completed": false }
@@ -58,6 +63,7 @@
                 },
                     {
                     "name": "Waukeen’s Rest",
+                        "header": "Area 6 Header",
                     "checklist": [
                         { "text": "Clear the burning building", "completed": false },
                         { "text": "Save the Caravan", "completed": false },
@@ -66,6 +72,7 @@
                   },
                     {
                     "name": "Goblin Camp",
+                        "header": "Area 7 Header",
                     "checklist": [
                         { "text": "Rescue Volo", "completed": false },
                         { "text": "Owlbear race + rescue <span class='spoiler'>and if you murder hobo the goblins, just keep the owlbear alive</span>", "completed": false },
@@ -78,6 +85,7 @@
                   },
                     {
                     "name": "Putrid Bog",
+                        "header": "Area 8 Header",
                     "checklist": [
                         { "text": "Save the lady", "completed": false },
                         { "text": "Confront the hunter", "completed": false }
