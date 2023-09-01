@@ -223,17 +223,17 @@ function loadExpandedState() {
 
     if (expandedState) {
         // Iterate through the saved state and apply it to act headers
-        for (const actName in expandedState) {
-            if (expandedState.hasOwnProperty(actName)) {
-                // Find the corresponding act header
-                const actHeader = document.querySelector('.act-header:contains("' + actName + '")');
+        const actHeaders = document.querySelectorAll('.act-header');
+        actHeaders.forEach((actHeader) => {
+            // Get the act name
+            const actName = actHeader.textContent.trim();
 
-                if (actHeader) {
-                    // Expand or collapse the area list based on the saved state
-                    actHeader.nextElementSibling.style.display = expandedState[actName] ? 'block' : 'none';
-                }
+            // Check if the actName exists in the saved state
+            if (expandedState.hasOwnProperty(actName)) {
+                // Expand or collapse the area list based on the saved state
+                actHeader.nextElementSibling.style.display = expandedState[actName] ? 'block' : 'none';
             }
-        }
+        });
     }
 }
 
@@ -252,3 +252,11 @@ actHeaders.forEach((actHeader) => {
 renderChecklist();
 // Call loadExpandedState when the page loads to restore the state
 loadExpandedState();
+
+// Set Act 1 to be expanded by default
+document.addEventListener('DOMContentLoaded', () => {
+    const act1Header = document.querySelector('.act-header:contains("Act 1")');
+    if (act1Header) {
+        act1Header.nextElementSibling.style.display = 'block';
+    }
+});
