@@ -2,6 +2,7 @@
     "acts": [
         {
             "name": "Act 1",
+            "expanded": true,
             "header": "Act 1",
             "areas": [
                 {
@@ -68,6 +69,7 @@
                     "checklist": [
                         { "text": "Clear the burning building", "completed": false },
                         { "text": "Save the Caravan", "completed": false },
+                        { "text": "Head to the Hideout", "completed": false },
                         { "text": "Rescue the Artist", "completed": false }
                     ]
                 },

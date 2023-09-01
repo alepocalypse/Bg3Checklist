@@ -202,8 +202,8 @@ function saveExpandedState() {
 
     // Iterate through each act header
     actHeaders.forEach((actHeader) => {
-        // Get the act name
-        const actName = actHeader.textContent.trim();
+        // Get the act name from the data attribute
+        const actName = actHeader.dataset.act;
 
         // Check if the area list is expanded or collapsed
         const isExpanded = actHeader.nextElementSibling.style.display === 'block';
@@ -225,8 +225,8 @@ function loadExpandedState() {
         // Iterate through the saved state and apply it to act headers
         const actHeaders = document.querySelectorAll('.act-header');
         actHeaders.forEach((actHeader) => {
-            // Get the act name
-            const actName = actHeader.textContent.trim();
+            // Get the act name from the data attribute
+            const actName = actHeader.dataset.act;
 
             // Check if the actName exists in the saved state
             if (expandedState.hasOwnProperty(actName)) {
@@ -250,13 +250,13 @@ actHeaders.forEach((actHeader) => {
 
 // Call the renderChecklist function to load and render the data
 renderChecklist();
-// Call loadExpandedState when the page loads to restore the state
-loadExpandedState();
 
-// Set Act 1 to be expanded by default
 document.addEventListener('DOMContentLoaded', () => {
-    const act1Header = document.querySelector('.act-header:contains("Act 1")');
+    const act1Header = document.querySelector('.act-header[data-act="Act 1"]');
     if (act1Header) {
         act1Header.nextElementSibling.style.display = 'block';
     }
 });
+
+// Call loadExpandedState when the page loads to restore the state
+loadExpandedState();
