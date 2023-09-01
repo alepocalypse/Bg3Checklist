@@ -59,83 +59,82 @@ function renderChecklist() {
                     areaItem.appendChild(checklistDiv);
 
                     area.checklist.forEach((item) => {
-                        const checklistItem = document.createElement('li');
-                        const checkbox = document.createElement('input');
-                        checkbox.type = 'checkbox';
+    const checklistItem = document.createElement('li');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
 
-                        // Find the saved state for this checklist item
-                        const savedItem = savedItems.find((saved) => saved.text === item.text);
-                        if (savedItem) {
-                            checkbox.checked = savedItem.completed;
-                        } else {
-                            checkbox.checked = item.completed;
-                        }
+    // Find the saved state for this checklist item
+    const savedItem = savedItems.find((saved) => saved.text === item.text);
+    if (savedItem) {
+        checkbox.checked = savedItem.completed;
+    } else {
+        checkbox.checked = item.completed;
+    }
 
-                        const label = document.createElement('label');
-                        let labelText = item.text;
+    const label = document.createElement('label');
+    let labelText = item.text;
 
-                        // Check if the item has a URL
-                        if (item.url) {
-                            // Create a div to contain the label text and the link icon
-                            const labelContainer = document.createElement('div');
+    // Check if the item has a URL
+    if (item.url) {
+        // Create a div to contain the label text and the link icon
+        const labelContainer = document.createElement('div');
 
-                            // Create a link element for the label text
-                            const linkText = document.createElement('a');
-                            linkText.href = item.url;
-                            linkText.target = '_blank'; // Open the link in a new tab
-                            linkText.textContent = labelText.replace(/<[^>]*>/g, ''); // Remove HTML tags
+        // Create a link element for the label text
+        const linkText = document.createElement('a');
+        linkText.href = item.url;
+        linkText.target = '_blank'; // Open the link in a new tab
+        linkText.textContent = labelText.replace(/<[^>]*>/g, ''); // Remove HTML tags
 
-                            // Create an <i> element for the Font Awesome icon
-                            const linkIcon = document.createElement('i');
-                            linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
-                            linkIcon.style.marginLeft = '5px'; // Adjust the margin to control the position
+        // Create an <i> element for the Font Awesome icon
+        const linkIcon = document.createElement('i');
+        linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
+        linkIcon.style.marginLeft = '5px'; // Adjust the margin to control the position
 
-                            // Add a click event listener to the icon to open the link in a new tab and switch to that tab
-                            linkIcon.addEventListener('click', () => {
-                                const newTab = window.open(item.url, '_blank');
-                                newTab.focus(); // Switch to the new tab
-                            });
+        // Add a click event listener to the icon to open the link in a new tab and switch to that tab
+        linkIcon.addEventListener('click', () => {
+            const newTab = window.open(item.url, '_blank');
+            newTab.focus(); // Switch to the new tab
+        });
 
-                            // Append the link text and link icon to the label container
-                            labelContainer.appendChild(linkText);
-                            labelContainer.appendChild(linkIcon);
+        // Append the link text and link icon to the label container
+        labelContainer.appendChild(linkText);
+        labelContainer.appendChild(linkIcon);
 
-                            // Append the label container to the label
-                            label.appendChild(labelContainer);
-                        } else {
-                            // If no URL, display the label text as it is
-                            label.innerHTML = labelText; // Use innerHTML to render HTML
-                        }
+        // Append the label container to the label
+        label.appendChild(labelContainer);
+    } else {
+        // If no URL, display the label text as it is
+        if (labelText.includes('<span class=\'spoiler\'>')) {
+            const spoilerText = document.createElement('span');
+            spoilerText.innerHTML = labelText;
+            const spoilerSpan = spoilerText.querySelector('.spoiler');
+            spoilerSpan.classList.add('spoiler');
 
-                        // Check if the item has spoiler tags
-                        if (labelText.includes('<span class=\'spoiler\'>')) {
-                            const spoilerText = document.createElement('span');
-                            spoilerText.innerHTML = labelText;
-                            const spoilerSpan = spoilerText.querySelector('.spoiler');
-                            spoilerSpan.classList.add('spoiler');
+            if (savedItem && savedItem.spoilerRevealed) {
+                spoilerSpan.classList.remove('spoiler');
+            } else {
+                // Add a click event listener to reveal the spoiler
+                spoilerSpan.addEventListener('click', () => {
+                    spoilerSpan.classList.remove('spoiler');
+                    if (savedItem) {
+                        savedItem.spoilerRevealed = true;
+                    } else {
+                        item.spoilerRevealed = true;
+                    }
+                    saveChecklist();
+                });
+            }
 
-                            if (savedItem && savedItem.spoilerRevealed) {
-                                spoilerSpan.classList.remove('spoiler');
-                            } else {
-                                // Add a click event listener to reveal the spoiler
-                                spoilerSpan.addEventListener('click', () => {
-                                    spoilerSpan.classList.remove('spoiler');
-                                    if (savedItem) {
-                                        savedItem.spoilerRevealed = true;
-                                    } else {
-                                        item.spoilerRevealed = true;
-                                    }
-                                    saveChecklist();
-                                });
-                            }
+            label.appendChild(spoilerText);
+        } else {
+            label.innerHTML = labelText; // Use innerHTML to render HTML
+        }
+    }
 
-                            label.appendChild(spoilerText);
-                        }
-
-                        checklistItem.appendChild(checkbox);
-                        checklistItem.appendChild(label);
-                        checklistDiv.appendChild(checklistItem);
-                    });
+    checklistItem.appendChild(checkbox);
+    checklistItem.appendChild(label);
+    checklistDiv.appendChild(checklistItem);
+});
 
                     areasList.appendChild(areaItem);
                 });
