@@ -5,7 +5,7 @@ body, h1, h2, ul, li {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #333; /* Dark background color */
     color: #fff; /* Light text color */
 }
@@ -137,5 +137,6 @@ a:hover {
 /* Center the footer */
 footer {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     margin-top: auto; /* Push the footer to the bottom of the container */
 }
