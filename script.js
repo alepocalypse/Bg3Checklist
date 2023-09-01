@@ -41,9 +41,10 @@ function renderChecklist() {
 }
     
 function saveChecklist() {
-    const items = Array.from(checklist.children).map((item) => ({
-        text: item.querySelector('span').textContent,
-        completed: item.querySelector('input').checked,
+    const checklistContainer = document.getElementById('checklist');
+    const items = Array.from(checklistContainer.children).map((item) => ({
+        text: item.querySelector('input[type="checkbox"] + label').textContent,
+        completed: item.querySelector('input[type="checkbox"]').checked,
     }));
 
     // Store the checklist items in local storage
@@ -51,7 +52,8 @@ function saveChecklist() {
 }
 
 // Event listener for marking items as completed
-actsContainer.addEventListener('change', (event) => {
+const checklistContainer = document.getElementById('checklist');
+checklistContainer.addEventListener('change', (event) => {
     if (event.target.type === 'checkbox') {
         // Find the corresponding checklist item and update its completion status
         const text = event.target.nextElementSibling.textContent;
@@ -66,15 +68,14 @@ actsContainer.addEventListener('change', (event) => {
         // Save the updated checklist
         localStorage.setItem('checklistItems', JSON.stringify(storedItems));
     }
-}
-                              // Event listener for the "Save Checklist" button
+});
+                              
+// Event listener for the "Save Checklist" button
 const saveButton = document.getElementById('saveButton');
 saveButton.addEventListener('click', () => {
     saveChecklist();
     alert('Checklist saved locally.');
-                              );
 });
-
     
 // Call the renderChecklist function to load and render the data
 renderChecklist();
