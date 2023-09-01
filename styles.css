@@ -84,3 +84,21 @@ a:hover {
     color: #fff; /* Change text color to white when hovered */
     background-color: transparent; /* Make the background transparent when hovered */
 }
+/* Style the area headers */
+.area-header {
+    cursor: pointer; /* Add a pointer cursor for interactivity */
+    margin: 10px 0; /* Add spacing between area headers */
+    font-weight: bold;
+}
+
+/* Style the area-checklist to hide by default */
+.area-checklist {
+    list-style-type: none;
+    padding-left: 20px; /* Add indentation for checklist items */
+    display: none; /* Hide the checklist by default */
+}
+
+/* Style the area-checklist items */
+.area-checklist li {
+    margin: 5px 0;
+}
