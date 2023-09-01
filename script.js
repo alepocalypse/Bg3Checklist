@@ -237,8 +237,6 @@ function loadExpandedState() {
     }
 }
 
-// Call loadExpandedState when the page loads to restore the state
-loadExpandedState();
 
 // Add event listeners to act headers for expanding/collapsing
 const actHeaders = document.querySelectorAll('.act-header');
@@ -252,3 +250,5 @@ actHeaders.forEach((actHeader) => {
 
 // Call the renderChecklist function to load and render the data
 renderChecklist();
+// Call loadExpandedState when the page loads to restore the state
+loadExpandedState();
