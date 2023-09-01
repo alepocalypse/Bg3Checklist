@@ -2,6 +2,7 @@
     "acts": [
         {
             "name": "Act 1",
+            "header": "Act 1",
             "areas": [
                 {
                     "name": "Nautiloid",
