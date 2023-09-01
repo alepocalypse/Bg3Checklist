@@ -75,29 +75,15 @@ a:hover {
     display: inline-block;
 }
 
-/* Spoiler text */
+/* Define a CSS rule for the spoiler class */
 .spoiler {
-    color: transparent;
-    background-color: #000;
-    cursor: pointer;
-    position: relative; /* Required for positioning the tooltip */
+    color: transparent; /* Make the text transparent by default */
+    background-color: #000; /* Set a background color (e.g., black) for spoiler text */
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
 }
 
-/* Tooltip */
-.tooltip {
-    position: absolute;
-    top: -30px; /* Adjust the vertical position of the tooltip */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #000;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s;
-}
-
-/* Show the tooltip on hover */
-.tooltip-container:hover .spoiler:hover + .tooltip {
-    opacity: 1;
+/* Define a hover effect to reveal spoiler text when hovered */
+.spoiler:hover {
+    color: #fff; /* Change text color to white when hovered */
+    background-color: transparent; /* Make the background transparent when hovered */
 }
