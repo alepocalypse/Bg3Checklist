@@ -1,1 +1,49 @@
+/* Reset some default browser styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #444; /* Slightly lighter container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff; /* Light text color */
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Style checkboxes for the checklist */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style links */
+a {
+    text-decoration: none;
+    color: #00a2e8; /* Accent color */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0080c5; /* Darker accent color on hover */
+}
