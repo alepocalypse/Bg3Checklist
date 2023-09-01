@@ -47,3 +47,19 @@ a {
 a:hover {
     color: #0080c5; /* Darker accent color on hover */
 }
+
+/* Style for Act */
+#acts {
+    font-size: 24px; /* Large font size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Style for Areas */
+ul > ul {
+    font-size: 18px; /* A bit smaller than Act */
+}
+
+/* Style for Checklist (nested ul) */
+ul ul ul {
+    font-size: 16px; /* Smaller than Areas */
+}
