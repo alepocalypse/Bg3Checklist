@@ -69,3 +69,14 @@ a:hover {
     font-size: 16px; /* Adjust the font size as needed */
     /* You can add more styles as needed */
 }
+
+/* CSS for hiding spoilers initially */
+.spoiler {
+    background-color: black;
+    color: black;
+    cursor: pointer;
+}
+
+.spoiler:hover {
+    color: red; /* Change color on hover to indicate it's clickable */
+}
