@@ -81,23 +81,27 @@ function renderChecklist() {
                             spoilerText.innerHTML = labelText;
                             const spoilerSpan = spoilerText.querySelector('.spoiler');
                         
+                            const spoilerReveal = document.createElement('span');
+                            spoilerReveal.textContent = 'Spoiler'; // Text for revealing the spoiler
+                            spoilerReveal.classList.add('spoiler-reveal'); // Add a class for styling
+                        
                             if (savedItem && savedItem.spoilerRevealed) {
                                 spoilerSpan.classList.remove('spoiler');
-                                checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
                             } else {
                                 // Add a click event listener to reveal the spoiler
-                                spoilerSpan.addEventListener('click', () => {
+                                spoilerReveal.addEventListener('click', () => {
                                     spoilerSpan.classList.remove('spoiler');
-                                    checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
+                                    spoilerReveal.style.display = 'none'; // Hide the reveal link
                                     saveChecklist();
                                 });
                             }
                         
-                            // Set labelText to the updated spoilerText
-                            labelText = spoilerText.innerHTML;
+                            label.innerHTML = ''; // Clear the label text
+                            label.appendChild(spoilerSpan); // Add the spoiler text
+                            label.appendChild(spoilerReveal); // Add the spoiler reveal link
+                        } else {
+                            label.innerHTML = labelText; // No spoiler, use the original text
                         }
-                        
-                        label.innerHTML = labelText;
                         
                         // Add the checkbox before the label
                         checklistItem.appendChild(checkbox);
@@ -108,7 +112,7 @@ function renderChecklist() {
                         // Add the checklist item to the checklist div
                         checklistDiv.appendChild(checklistItem);
                     });
-                    
+
                     // Add the area item to the areas list
                     areasList.appendChild(areaItem);
                 });
