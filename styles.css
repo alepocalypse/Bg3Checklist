@@ -69,14 +69,35 @@ a:hover {
     font-size: 16px; /* Adjust the font size as needed */
     /* You can add more styles as needed */
 }
-
-/* CSS for hiding spoilers initially */
-.spoiler {
-    background-color: black;
-    color: black;
-    cursor: pointer;
+/* Tooltip container */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
 }
 
-.spoiler:hover {
-    color: red; /* Change color on hover to indicate it's clickable */
+/* Spoiler text */
+.spoiler {
+    color: transparent;
+    background-color: #000;
+    cursor: pointer;
+    position: relative; /* Required for positioning the tooltip */
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    top: -30px; /* Adjust the vertical position of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip on hover */
+.tooltip-container:hover .spoiler:hover + .tooltip {
+    opacity: 1;
 }
