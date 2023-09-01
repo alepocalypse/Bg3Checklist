@@ -34,9 +34,38 @@ function renderChecklist() {
                         }
 
                         const label = document.createElement('label');
-                        label.textContent = item.text;
-                        checklistItem.appendChild(checkbox);
-                        checklistItem.appendChild(label);
+                        let labelText = item.text;
+                        
+                        // Check if the item has spoiler tags
+                        if (labelText.includes('[spoiler]')) {
+                            labelText = labelText.replace('[spoiler]', '');
+                            labelText = labelText.replace('[/spoiler]', '');
+                            const spoilerText = document.createElement('span');
+                            spoilerText.textContent = labelText;
+                            spoilerText.classList.add('spoiler');
+
+                            if (savedItem && savedItem.spoilerRevealed) {
+                                spoilerText.classList.remove('spoiler');
+                            } else {
+                                // Add a click event listener to reveal the spoiler
+                                spoilerText.addEventListener('click', () => {
+                                    spoilerText.classList.remove('spoiler');
+                                    if (savedItem) {
+                                        savedItem.spoilerRevealed = true;
+                                    } else {
+                                        item.spoilerRevealed = true;
+                                    }
+                                    saveChecklist();
+                                });
+                            }
+
+                            checklistItem.appendChild(spoilerText);
+                        } else {
+                            label.textContent = labelText;
+                            checklistItem.appendChild(checkbox);
+                            checklistItem.appendChild(label);
+                        }
+
                         checklist.appendChild(checklistItem);
                     });
 
@@ -59,6 +88,7 @@ function saveChecklist() {
         (checkbox) => ({
             text: checkbox.nextElementSibling.textContent,
             completed: checkbox.checked,
+            spoilerRevealed: !checkbox.nextElementSibling.classList.contains('spoiler')
         })
     );
 
