@@ -2,30 +2,7 @@ const checklist = document.getElementById('checklist');
 const taskInput = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTaskBtn');
 
-addTaskBtn.addEventListener('click', addTask);
-
-function addTask() {
-    const taskText = taskInput.value.trim();
-
-    if (taskText !== '') {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-            <input type="checkbox">
-            <span>${taskText}</span>
-            <button class="delete">Delete</button>
-        `;
-        checklist.appendChild(listItem);
-        taskInput.value = '';
-        saveChecklist();
-    }
-}
-
-checklist.addEventListener('click', (e) => {
-    if (e.target.classList.contains('delete')) {
-        e.target.parentElement.remove();
-        saveChecklist();
-    }
-});
+import checklistData from './checklistData.js';
 
 function saveChecklist() {
     // Save checklist items to local storage
