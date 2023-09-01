@@ -2,7 +2,7 @@ const checklist = document.getElementById('checklist');
 const taskInput = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTaskBtn');
 
-import checklistData from './checklistData.js';
+import checklistData from './ChecklistData.js';
 
 function saveChecklist() {
     // Save checklist items to local storage
