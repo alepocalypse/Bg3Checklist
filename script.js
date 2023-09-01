@@ -12,9 +12,28 @@ function renderChecklist() {
             // Use the fetched data to render the checklist
             data.acts.forEach((act) => {
                 const actItem = document.createElement('li');
-                actItem.textContent = act.name;
 
+                // Create a header element for the act
+                const actHeader = document.createElement('h1');
+                actHeader.textContent = act.name;
+                actHeader.classList.add('act-header'); // Add a class for styling
+
+                // Create a div to contain the area lists
+                const areasListDiv = document.createElement('div');
+                areasListDiv.classList.add('area-lists');
+
+                actHeader.addEventListener('click', () => {
+                    // Toggle the visibility of the area lists when the act header is clicked
+                    if (areasListDiv.style.display === 'none') {
+                        areasListDiv.style.display = 'block';
+                    } else {
+                        areasListDiv.style.display = 'none';
+                    }
+                });
+
+                // Create a ul element to contain the area lists
                 const areasList = document.createElement('ul');
+
                 act.areas.forEach((area) => {
                     const areaItem = document.createElement('li');
 
@@ -29,7 +48,7 @@ function renderChecklist() {
                     checklistDiv.style.display = 'none'; // Initially hide the checklist
 
                     areaHeader.addEventListener('click', () => {
-                        // Toggle the checklist visibility when the header is clicked
+                        // Toggle the checklist visibility when the area header is clicked
                         if (checklistDiv.style.display === 'none') {
                             checklistDiv.style.display = 'block';
                         } else {
@@ -91,7 +110,9 @@ function renderChecklist() {
                     areasList.appendChild(areaItem);
                 });
 
-                actItem.appendChild(areasList);
+                areasListDiv.appendChild(areasList);
+                actItem.appendChild(actHeader);
+                actItem.appendChild(areasListDiv);
                 checklistContainer.appendChild(actItem);
             });
         })
@@ -121,14 +142,15 @@ checklistContainer.addEventListener('change', (event) => {
     }
 });
 
-// Add event listeners to the area headers for collapsing/expanding
-const areaHeaders = document.querySelectorAll('.area-header');
-areaHeaders.forEach((header) => {
+// Add event listeners to the area and act headers for collapsing/expanding
+const headers = document.querySelectorAll('.area-header, .act-header');
+headers.forEach((header) => {
     header.addEventListener('click', () => {
-        const checklist = header.nextElementSibling; // Get the checklist associated with the header
-        checklist.style.display = checklist.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
+        const content = header.nextElementSibling; // Get the content associated with the header
+        content.style.display = content.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
     });
 });
+
 // Event listener for the "Save Checklist" button
 const saveButton = document.getElementById('saveButton');
 saveButton.addEventListener('click', () => {
@@ -136,5 +158,18 @@ saveButton.addEventListener('click', () => {
     alert('Checklist saved locally.');
 });
 
+// Event listener for clearing local data
+const clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click', () => {
+    const confirmed = window.confirm('Are you sure you want to clear your local data? This action cannot be undone.');
+
+    if (confirmed) {
+        // User confirmed, clear local data
+        localStorage.removeItem('checklistItems');
+        alert('Local data cleared.');
+        // Reload the checklist to reflect the changes
+        location.reload();
+    }
+});
 // Call the renderChecklist function to load and render the data
 renderChecklist();
