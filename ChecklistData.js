@@ -29,7 +29,7 @@ const checklistData = {
                     name: "Blighted Village (Central)",
                     checklist: [
                         { text: "Find Dog, northeast of village", completed: false },
-                        { text: "Interrupt a dangerous liaison (Barn north of village)", completed: false },
+                        { text: "Interrupt a dangerous liaison (Barn north of the village)", completed: false },
                     ],
                 },
             ],
