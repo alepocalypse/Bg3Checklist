@@ -22,7 +22,7 @@
                     ]
                 },
                 {
-                    "name": "Emerald Grove",
+                    "name": "Druids Grove",
                     "checklist": [
                         { "text": "Defend the Grove", "completed": false },
                         { "text": "Recruit Wyll", "completed": false },
@@ -55,7 +55,34 @@
                         { "text": "Recruit Karlach", "completed": false },
                         { "text": "Handle Karlach's foes", "completed": false }
                     ]
-                }
+                },
+                    {
+                    "name": "Waukeen’s Rest",
+                    "checklist": [
+                        { "text": "Clear the burning building", "completed": false },
+                        { "text": "Save the Caravan", "completed": false },
+                        { "text": "Rescue the Artist", "completed": false }
+                    ]
+                  },
+                    {
+                    "name": "Goblin Camp",
+                    "checklist": [
+                        { "text": "Rescue Volo", "completed": false },
+                        { "text": "Owlbear race + rescue <span class='spoiler'>and if you murder hobo the goblins, just keep the owlbear alive</span>", "completed": false },
+                        { "text": "Free Druid", "completed": false },
+                        { "text": "Rescue the tortured guy", "completed": false },
+                        { "text": "Talk to Abdirak <span class='spoiler'> the BDSM priest, let him beat you 3 times and you gotta scream </span>", "completed": false },
+                        { "text": "Slay 3 True Souls", "completed": false }
+                    ]
+                },
+                  },
+                    {
+                    "name": "Putrid Bog",
+                    "checklist": [
+                        { "text": "Save the lady", "completed": false },
+                        { "text": "Confront the hunter", "completed": false }
+                    ]
+                },
             ]
         }
     ]
