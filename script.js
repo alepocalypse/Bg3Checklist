@@ -58,71 +58,80 @@ function renderChecklist() {
                     areaItem.appendChild(areaHeader);
                     areaItem.appendChild(checklistDiv);
 
-                    area.checklist.forEach((item) => {
-                        const checklistItem = document.createElement('li');
-                        const checkbox = document.createElement('input');
-                        checkbox.type = 'checkbox';
+                 area.checklist.forEach((item) => {
+    const checklistItem = document.createElement('li');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
 
-                        // Find the saved state for this checklist item
-                        const savedItem = savedItems.find((saved) => saved.text === item.text);
-                        if (savedItem) {
-                            checkbox.checked = savedItem.completed;
-                        } else {
-                            checkbox.checked = item.completed;
-                        }
+    // Find the saved state for this checklist item
+    const savedItem = savedItems.find((saved) => saved.text === item.text);
+    if (savedItem) {
+        checkbox.checked = savedItem.completed;
+    } else {
+        checkbox.checked = item.completed;
+    }
 
-                        const label = document.createElement('label');
-                        let labelText = item.text;
+    const label = document.createElement('label');
+    let labelText = item.text;
 
-                        // Check if the item has a URL
-                     f (item.url) {
-                        const linkIcon = document.createElement('i'); // Create an <i> element for the Font Awesome icon
-                        linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
-                        linkIcon.style.float = 'right'; // Align the icon to the right
-                        label.appendChild(linkIcon);
+    // Check if the item has a URL
+    if (item.url) {
+        // Create a link element for the label text
+        const linkText = document.createElement('a');
+        linkText.href = item.url;
+        linkText.target = '_blank'; // Open the link in a new tab
+        linkText.textContent = labelText.replace(/<[^>]*>/g, ''); // Remove HTML tags
+        label.appendChild(linkText);
 
-                        // Create a link element for the label text
-                        const linkText = document.createElement('a');
-                        linkText.href = item.url;
-                        linkText.target = '_blank'; // Open the link in a new tab
-                        linkText.textContent = labelText.replace(/<[^>]*>/g, ''); // Remove HTML tags
-                        label.appendChild(linkText);
-                    } else {
-                        // If no URL, display the label text as it is
-                        label.innerHTML = labelText; // Use innerHTML to render HTML
-                            }
+        // Create an <i> element for the Font Awesome icon
+        const linkIcon = document.createElement('i');
+        linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
+        linkIcon.style.float = 'right'; // Align the icon to the right
+        linkIcon.style.cursor = 'pointer'; // Change cursor to pointer to indicate it's clickable
 
-                        // Check if the item has spoiler tags
-                        if (labelText.includes('<span class=\'spoiler\'>')) {
-                            const spoilerText = document.createElement('span');
-                            spoilerText.innerHTML = labelText;
-                            const spoilerSpan = spoilerText.querySelector('.spoiler');
-                            spoilerSpan.classList.add('spoiler');
+        // Add a click event listener to the icon to open the link in a new tab and switch to that tab
+        linkIcon.addEventListener('click', () => {
+            const newTab = window.open(item.url, '_blank');
+            newTab.focus(); // Switch to the new tab
+        });
 
-                            if (savedItem && savedItem.spoilerRevealed) {
-                                spoilerSpan.classList.remove('spoiler');
-                            } else {
-                                // Add a click event listener to reveal the spoiler
-                                spoilerSpan.addEventListener('click', () => {
-                                    spoilerSpan.classList.remove('spoiler');
-                                    if (savedItem) {
-                                        savedItem.spoilerRevealed = true;
-                                    } else {
-                                        item.spoilerRevealed = true;
-                                    }
-                                    saveChecklist();
-                                });
-                            }
+        label.appendChild(linkIcon); // Append the icon to the label
+    } else {
+        // If no URL, display the label text as it is
+        label.innerHTML = labelText; // Use innerHTML to render HTML
+    }
 
-                            label.appendChild(spoilerText);
-                        } else {
-                            label.innerHTML = labelText; // Use innerHTML to render HTML
-                        }
+    // Check if the item has spoiler tags
+    if (labelText.includes('<span class=\'spoiler\'>')) {
+        const spoilerText = document.createElement('span');
+        spoilerText.innerHTML = labelText;
+        const spoilerSpan = spoilerText.querySelector('.spoiler');
+        spoilerSpan.classList.add('spoiler');
 
-                        checklistItem.appendChild(checkbox);
-                        checklistItem.appendChild(label);
-                        checklistDiv.appendChild(checklistItem);
-                    });
+        if (savedItem && savedItem.spoilerRevealed) {
+            spoilerSpan.classList.remove('spoiler');
+        } else {
+            // Add a click event listener to reveal the spoiler
+            spoilerSpan.addEventListener('click', () => {
+                spoilerSpan.classList.remove('spoiler');
+                if (savedItem) {
+                    savedItem.spoilerRevealed = true;
+                } else {
+                    item.spoilerRevealed = true;
+                }
+                saveChecklist();
+            });
+        }
+
+        label.appendChild(spoilerText);
+    } else {
+        label.innerHTML = labelText; // Use innerHTML to render HTML
+    }
+
+    checklistItem.appendChild(checkbox);
+    checklistItem.appendChild(label);
+    checklistDiv.appendChild(checklistItem);
+});
 
                     areasList.appendChild(areaItem);
                 });
