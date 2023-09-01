@@ -81,27 +81,23 @@ function renderChecklist() {
                             spoilerText.innerHTML = labelText;
                             const spoilerSpan = spoilerText.querySelector('.spoiler');
                         
-                            const spoilerReveal = document.createElement('span');
-                            spoilerReveal.textContent = 'Spoiler'; // Text for revealing the spoiler
-                            spoilerReveal.classList.add('spoiler-reveal'); // Add a class for styling
-                        
                             if (savedItem && savedItem.spoilerRevealed) {
                                 spoilerSpan.classList.remove('spoiler');
+                                checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
                             } else {
                                 // Add a click event listener to reveal the spoiler
-                                spoilerReveal.addEventListener('click', () => {
+                                spoilerSpan.addEventListener('click', () => {
                                     spoilerSpan.classList.remove('spoiler');
-                                    spoilerReveal.style.display = 'none'; // Hide the reveal link
+                                    checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
                                     saveChecklist();
                                 });
                             }
                         
-                            label.innerHTML = ''; // Clear the label text
-                            label.appendChild(spoilerSpan); // Add the spoiler text
-                            label.appendChild(spoilerReveal); // Add the spoiler reveal link
-                        } else {
-                            label.innerHTML = labelText; // No spoiler, use the original text
+                            // Set labelText to the updated spoilerText
+                            labelText = spoilerText.innerHTML;
                         }
+                        
+                        label.innerHTML = labelText;
                         
                         // Add the checkbox before the label
                         checklistItem.appendChild(checkbox);

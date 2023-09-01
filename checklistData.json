@@ -8,7 +8,7 @@
                     "name": "Nautiloid",
                     "header": "Nautiloid",
                     "checklist": [
-                        { "text": "Save the <span class='spoiler'> brain </span> in 2nd Room", "completed": false, "url": "https://bg3.wiki/wiki/Us" },
+                        { "text": "Save the brain in 2nd Room", "completed": false, "url": "https://bg3.wiki/wiki/Us" },
                         { "text": "Free Shadowheart", "completed": false },
                         { "text": "Defeat Commander Zhalk and get his sword.", "completed": false }
                     ]
@@ -21,7 +21,7 @@
                         { "text": "Recruit Astarion", "completed": false },
                         { "text": "Recruit Gale", "completed": false },
                         { "text": "Free Lae’zel", "completed": false },
-                        { "text": "Complete Dank Crypt <span class='spoiler'> and meet Withers </span> ", "completed": false }
+                        { "text": "Complete Dank Crypt and meet Withers", "completed": false }
                     ]
                 },
                 {
@@ -45,13 +45,13 @@
                     "header": "Blighted Village",
                     "checklist": [
                         { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home", "completed": false },
-                        { "text": "Search the Herbalist <span class='spoiler'> and get the book Necromancy of Thay</span>", "completed": false },
-                        { "text": "Down the Well and <span class='spoiler'>and kill spider queen </span>", "completed": false },
+                        { "text": "Search the Herbalist", "completed": false },
+                        { "text": "Down the Well", "completed": false },
                         { "text": "Rescue at the Windmill", "completed": false },
                         { "text": "Find Scratch the Dog", "completed": false },
                         { "text": "Deal with the Ogres", "completed": false },
                         { "text": "Love in the Barn", "completed": false },
-                        { "text": "Owlbear cave, <span class='spoiler'> Do not kill the baby</span>", "completed": false }
+                        { "text": "Owlbear cave", "completed": false }
                     ]
                 },
                 {
@@ -76,10 +76,10 @@
                     "header": "Goblin Camp",
                     "checklist": [
                         { "text": "Rescue Volo", "completed": false },
-                        { "text": "Owlbear race + rescue <span class='spoiler'>and if you murder hobo the goblins just keep the owlbear alive</span>", "completed": false },
+                        { "text": "Owlbear race + rescue", "completed": false },
                         { "text": "Free Druid", "completed": false },
                         { "text": "Rescue the tortured guy", "completed": false },
-                        { "text": "Talk to Abdirak <span class='spoiler'> the BDSM priest let him beat you 3 times and you gotta scream </span>", "completed": false },
+                        { "text": "Talk to Abdirak", "completed": false },
                         { "text": "Slay 3 True Souls", "completed": false },
                         { "text": "Keep the LUTE", "completed": false }
                     ]
