@@ -59,57 +59,53 @@ function renderChecklist() {
                     areaItem.appendChild(checklistDiv);
 
                     area.checklist.forEach((item) => {
-                        const checklistItem = document.createElement('li');
-                        const checkbox = document.createElement('input');
-                        checkbox.type = 'checkbox';
+        const checklistItem = document.createElement('li');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
 
-                        // Find the saved state for this checklist item
-                        const savedItem = savedItems.find((saved) => saved.text === item.text);
-                        if (savedItem) {
-                            checkbox.checked = savedItem.completed;
-                        } else {
-                            checkbox.checked = item.completed;
-                        }
+        // Find the saved state for this checklist item
+        const savedItem = savedItems.find((saved) => saved.text === item.text);
+        if (savedItem) {
+            checkbox.checked = savedItem.completed;
+        } else {
+            checkbox.checked = item.completed;
+        }
 
-                        const label = document.createElement('label');
-                        let labelText = item.text;
+        const label = document.createElement('label');
+        let labelText = item.text;
 
-                        if (labelText.includes('<span class=\'spoiler\'>')) {
-                            const spoilerText = document.createElement('span');
-                            spoilerText.innerHTML = labelText;
-                            const spoilerSpan = spoilerText.querySelector('.spoiler');
-                            spoilerSpan.classList.add('spoiler');
+        if (labelText.includes('<span class=\'spoiler\'>')) {
+            const spoilerText = document.createElement('span');
+            spoilerText.innerHTML = labelText;
+            const spoilerSpan = spoilerText.querySelector('.spoiler');
+            spoilerSpan.classList.add('spoiler');
 
-                            if (savedItem && savedItem.spoilerRevealed) {
-                                spoilerSpan.classList.remove('spoiler');
-                            } else {
-                                // Add a click event listener to reveal the spoiler
-                                spoilerSpan.addEventListener('click', () => {
-                                    spoilerSpan.classList.remove('spoiler');
-                                    if (savedItem) {
-                                        savedItem.spoilerRevealed = true;
-                                    } else {
-                                        item.spoilerRevealed = true;
-                                    }
-                                    saveChecklist();
-                                });
-                            }
+            if (savedItem && savedItem.spoilerRevealed) {
+                spoilerSpan.classList.remove('spoiler');
+            } else {
+                // Add a click event listener to reveal the spoiler
+                spoilerSpan.addEventListener('click', () => {
+                    spoilerSpan.classList.remove('spoiler');
+                    checkbox.nextElementSibling.classList.remove('spoiler');
+                    saveChecklist();
+                });
+            }
 
-                            label.appendChild(spoilerText);
-                        } else {
-                            // If no spoiler, display the label text as it is
-                            label.textContent = labelText;
-                        }
+            label.appendChild(spoilerText);
+        } else {
+            // If no spoiler, display the label text as it is
+            label.textContent = labelText;
+        }
 
-                        // Add the checkbox before the label
-                        checklistItem.appendChild(checkbox);
+        // Add the checkbox before the label
+        checklistItem.appendChild(checkbox);
 
-                        // Add the label to the checklist item
-                        checklistItem.appendChild(label);
+        // Add the label to the checklist item
+        checklistItem.appendChild(label);
 
-                        // Add the checklist item to the checklist div
-                        checklistDiv.appendChild(checklistItem);
-                    });
+        // Add the checklist item to the checklist div
+        checklistDiv.appendChild(checklistItem);
+    });
 
                     // Add the area item to the areas list
                     areasList.appendChild(areaItem);
@@ -132,11 +128,16 @@ function renderChecklist() {
 }
 
 function saveChecklist() {
-    const checklistItems = [...document.querySelectorAll('input[type="checkbox"]')].map((checkbox) => ({
-        text: checkbox.nextElementSibling.textContent,
-        completed: checkbox.checked,
-        spoilerRevealed: checkbox.nextElementSibling.classList.contains('spoiler-revealed'),
-    }));
+    const checklistItems = [...document.querySelectorAll('input[type="checkbox"]')].map((checkbox) => {
+        const text = checkbox.nextElementSibling.textContent;
+        const spoilerRevealed = checkbox.nextElementSibling.querySelector('.spoiler:not(.spoiler)') === null;
+        
+        return {
+            text: text,
+            completed: checkbox.checked,
+            spoilerRevealed: spoilerRevealed,
+        };
+    });
 
     localStorage.setItem('checklistItems', JSON.stringify(checklistItems));
 }
