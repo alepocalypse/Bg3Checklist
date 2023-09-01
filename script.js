@@ -102,6 +102,14 @@ checklistContainer.addEventListener('change', (event) => {
     }
 });
 
+// Add event listeners to the area headers for collapsing/expanding
+const areaHeaders = document.querySelectorAll('.area-header');
+areaHeaders.forEach((header) => {
+    header.addEventListener('click', () => {
+        const checklist = header.nextElementSibling; // Get the checklist associated with the header
+        checklist.style.display = checklist.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
+    });
+});
 // Event listener for the "Save Checklist" button
 const saveButton = document.getElementById('saveButton');
 saveButton.addEventListener('click', () => {
