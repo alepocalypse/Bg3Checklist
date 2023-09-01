@@ -2,34 +2,137 @@
     "acts": [
         {
             "name": "Act 1",
+            "header": "Act 1",
             "areas": [
                 {
                     "name": "Nautiloid",
+                    "header": "Nautiloid",
                     "checklist": [
-                        { "text": "Save The Brain (Room 2)", "completed": false },
+                        { "text": "Save the <span class='spoiler'> brain </span> in 2nd Room", "completed": false, "url": "https://bg3.wiki/wiki/Us" },
                         { "text": "Free Shadowheart", "completed": false },
-                        { "text": "Defeat Commander Zhalk, obtain Sword", "completed": false }
+                        { "text": "Defeat Commander Zhalk and get his sword.", "completed": false }
                     ]
                 },
                 {
-                    "name": "Nautiloid Crash (South East)",
+                    "name": "Crash Site",
+                    "header": "Crash Site",
                     "checklist": [
-                        { "text": "Wake up Shadowheart", "completed": false },
-                        { "text": "Recruit Astarion", "completed": false }
+                        { "text": "Recruit Shadowheart", "completed": false },
+                        { "text": "Recruit Astarion", "completed": false },
+                        { "text": "Recruit Gale", "completed": false },
+                        { "text": "Free Lae’zel", "completed": false },
+                        { "text": "Complete Dank Crypt <span class='spoiler'> and meet Withers </span> ", "completed": false }
                     ]
                 },
                 {
-                    "name": "Druid's Grove (North East)",
+                    "name": "Druids Grove",
+                    "header": "Druids Grove",
                     "checklist": [
-                        { "text": "Deal with the Attack", "completed": false },
-                        { "text": "Save Tiefling from an assassin (above the gate)", "completed": false }
+                        { "text": "Defend the Grove", "completed": false },
+                        { "text": "Recruit Wyll", "completed": false },
+                        { "text": "Speak to Volo", "completed": false },
+                        { "text": "Talk to Khaga and Rath", "completed": false },
+                        { "text": "Talk to Arbella's Parents", "completed": false },
+                        { "text": "Interact with the Strange Ox", "completed": false },
+                        { "text": "Talk to Alfira", "completed": false },
+                        { "text": "Talk to Dammon", "completed": false },
+                        { "text": "Stop the Assassination", "completed": false },
+                        { "text": "Rescue on the Beach", "completed": false }
                     ]
                 },
                 {
-                    "name": "Blighted Village (Central)",
+                    "name": "Blighted Village",
+                    "header": "Blighted Village",
                     "checklist": [
-                        { "text": "Find Dog, northeast of village", "completed": false },
-                        { "text": "Interrupt a dangerous liaison (Barn north of the village)", "completed": false }
+                        { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home", "completed": false },
+                        { "text": "Search the Herbalist <span class='spoiler'> and get the book Necromancy of Thay</span>", "completed": false },
+                        { "text": "Down the Well and <span class='spoiler'>and kill spider queen </span>", "completed": false },
+                        { "text": "Rescue at the Windmill", "completed": false },
+                        { "text": "Find Scratch the Dog", "completed": false },
+                        { "text": "Deal with the Ogres", "completed": false },
+                        { "text": "Love in the Barn", "completed": false },
+                        { "text": "Owlbear cave, <span class='spoiler'> Do not kill the baby</span>", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Risen Road",
+                    "header": "Risen Road",
+                    "checklist": [
+                        { "text": "Recruit Karlach", "completed": false },
+                        { "text": "Handle Karlach's foes", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Waukeen’s Rest",
+                    "header": "Waukeen’s Rest",
+                    "checklist": [
+                        { "text": "Clear the burning building", "completed": false },
+                        { "text": "Save the Caravan", "completed": false },
+                        { "text": "Rescue the Artist", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Goblin Camp",
+                    "header": "Goblin Camp",
+                    "checklist": [
+                        { "text": "Rescue Volo", "completed": false },
+                        { "text": "Owlbear race + rescue <span class='spoiler'>and if you murder hobo the goblins just keep the owlbear alive</span>", "completed": false },
+                        { "text": "Free Druid", "completed": false },
+                        { "text": "Rescue the tortured guy", "completed": false },
+                        { "text": "Talk to Abdirak <span class='spoiler'> the BDSM priest let him beat you 3 times and you gotta scream </span>", "completed": false },
+                        { "text": "Slay 3 True Souls", "completed": false },
+                        { "text": "Keep the LUTE", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Putrid Bog",
+                    "header": "Putrid Bog",
+                    "checklist": [
+                        { "text": "Save the lady", "completed": false },
+                        { "text": "Confront the hunter", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Underdark",
+                    "header": "Underdark",
+                    "checklist": [
+                        { "text": "Find the Selunite outpost.", "completed": false },
+                        { "text": "Sword in Stone", "completed": false },
+                        { "text": "Find the Arcane Tower", "completed": false },
+                        { "text": "In Arcane Tower break the Stool of Mysterious Strength", "completed": false },
+                        { "text": "In Arcane Tower get the Gith Disk", "completed": false },
+                        { "text": "Spectate a stoned drow", "completed": false },
+                        { "text": "Festering Cove", "completed": false },
+                        { "text": "Obtain the Sergeant’s boots, a gnome stole them.", "completed": false },
+                        { "text": "Complete the Mushroom People", "completed": false },
+                        { "text": "Help Gut with the Duergar, is shes still kicking", "completed": false },
+                        { "text": "Gnome in colony needs help", "completed": false },
+                        { "text": "Rescue a dumb dwarf", "completed": false },
+                        { "text": "A very rare item in the boom mushrooms try and save it", "completed": false },
+                        { "text": "Meet Omellum in the Myconid Colony", "completed": false },
+                        { "text": "Find Sussur Bark then head back to the Blacksmith Shop in Blighted Village", "completed": false },
+                        { "text": "Find Icy Metal Icy Heave, and Icy Crystal", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Grymforge",
+                    "header": "Grymforge",
+                    "checklist": [
+                        { "text": "Save the Grymforge Gnomes", "completed": false },
+                        { "text": "Find the Runepowder Gnome, past the hidden kitchen area.", "completed": false },
+                        { "text": "Find the Adamantine Forge and two pieces of Mithril Ore. Then defeat Grym", "completed": false },
+                        { "text": "Help the cursed monk", "completed": false },
+                        { "text": "Eliminate Nere", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Mountain Pass",
+                    "header": "Mountain Pass",
+                    "checklist": [
+                        { "text": "Speak with Elminster at the entrance to the Shadow-Cursed Lands and then promptly turn around", "completed": false },
+                        { "text": "Complete the Githyanki Creche", "completed": false },
+                        { "text": "Deal with the merchant woman who wants an egg", "completed": false },
+                        { "text": "Find the Blood of Lathander", "completed": false }
                     ]
                 }
             ]
