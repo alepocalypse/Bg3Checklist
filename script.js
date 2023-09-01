@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', () => {
+
 import checklistData from './ChecklistData.js';
 
 function saveChecklist() {
@@ -65,3 +67,4 @@ actsContainer.addEventListener('change', (event) => {
 
 // Initial rendering
 renderChecklist();
+});
