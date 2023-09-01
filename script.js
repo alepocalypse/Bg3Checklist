@@ -1,5 +1,3 @@
-window.addEventListener('DOMContentLoaded', () => {
-
 // Function to fetch JSON data and render the checklist
 function renderChecklist() {
     const checklistContainer = document.getElementById('checklist');
@@ -68,8 +66,15 @@ actsContainer.addEventListener('change', (event) => {
         // Save the updated checklist
         localStorage.setItem('checklistItems', JSON.stringify(storedItems));
     }
+}
+                              // Event listener for the "Save Checklist" button
+const saveButton = document.getElementById('saveButton');
+saveButton.addEventListener('click', () => {
+    saveChecklist();
+    alert('Checklist saved locally.');
+                              );
 });
+
     
 // Call the renderChecklist function to load and render the data
 renderChecklist();
-    });
