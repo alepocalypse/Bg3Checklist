@@ -74,56 +74,31 @@ function renderChecklist() {
                         const label = document.createElement('label');
                         let labelText = item.text;
 
-                        if (item.url) {
-                            // Create a div to contain the label text and the link icon
-                            const labelContainer = document.createElement('div');
+                        if (labelText.includes('<span class=\'spoiler\'>')) {
+                            const spoilerText = document.createElement('span');
+                            spoilerText.innerHTML = labelText;
+                            const spoilerSpan = spoilerText.querySelector('.spoiler');
+                            spoilerSpan.classList.add('spoiler');
 
-                            // Create an <i> element for the Font Awesome icon
-                            const linkIcon = document.createElement('i');
-                            linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
-                            linkIcon.style.marginRight = '5px'; // Adjust the margin to control the position
-                            linkIcon.style.cursor = 'pointer'; // Change cursor to pointer to indicate it's clickable
-
-                            // Create a link element for the label text
-                            const linkText = document.createElement('a');
-                            linkText.href = item.url;
-                            linkText.target = '_blank'; // Open the link in a new tab
-                            linkText.textContent = labelText.replace(/<[^>]*>/g, ''); // Remove HTML tags
-
-                            // Append the link icon and link text to the label container
-                            labelContainer.appendChild(linkIcon);
-                            labelContainer.appendChild(linkText);
-
-                            // Append the label container to the label
-                            label.appendChild(labelContainer);
-                        } else {
-                            // If no URL, display the label text as it is
-                            if (labelText.includes('<span class=\'spoiler\'>')) {
-                                const spoilerText = document.createElement('span');
-                                spoilerText.innerHTML = labelText;
-                                const spoilerSpan = spoilerText.querySelector('.spoiler');
-                                spoilerSpan.classList.add('spoiler');
-
-                                if (savedItem && savedItem.spoilerRevealed) {
-                                    spoilerSpan.classList.remove('spoiler');
-                                } else {
-                                    // Add a click event listener to reveal the spoiler
-                                    spoilerSpan.addEventListener('click', () => {
-                                        spoilerSpan.classList.remove('spoiler');
-                                        if (savedItem) {
-                                            savedItem.spoilerRevealed = true;
-                                        } else {
-                                            item.spoilerRevealed = true;
-                                        }
-                                        saveChecklist();
-                                    });
-                                }
-
-                                label.appendChild(spoilerText);
+                            if (savedItem && savedItem.spoilerRevealed) {
+                                spoilerSpan.classList.remove('spoiler');
                             } else {
-                                // If no URL and no spoiler, display the label text as it is
-                                label.textContent = labelText;
+                                // Add a click event listener to reveal the spoiler
+                                spoilerSpan.addEventListener('click', () => {
+                                    spoilerSpan.classList.remove('spoiler');
+                                    if (savedItem) {
+                                        savedItem.spoilerRevealed = true;
+                                    } else {
+                                        item.spoilerRevealed = true;
+                                    }
+                                    saveChecklist();
+                                });
                             }
+
+                            label.appendChild(spoilerText);
+                        } else {
+                            // If no spoiler, display the label text as it is
+                            label.textContent = labelText;
                         }
 
                         // Add the checkbox before the label
