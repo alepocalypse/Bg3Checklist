@@ -49,17 +49,17 @@ a:hover {
 }
 
 /* Style for Act */
-#acts {
+li {
     font-size: 24px; /* Large font size */
     font-weight: bold; /* Bold text */
 }
 
 /* Style for Areas */
-ul > ul {
+li > ul {
     font-size: 18px; /* A bit smaller than Act */
 }
 
 /* Style for Checklist (nested ul) */
-ul ul ul {
+li ul ul {
     font-size: 16px; /* Smaller than Areas */
 }
