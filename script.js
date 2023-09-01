@@ -116,11 +116,11 @@ function renderChecklist() {
                     // Add the act item to the checklist container
                     checklistContainer.appendChild(actItem);
                 });
-            })
-            .catch((error) => {
-                console.error('Error loading checklist data:', error);
             });
-    });
+        })
+        .catch((error) => {
+            console.error('Error loading checklist data:', error);
+        });
 }
 
 function saveChecklist() {
