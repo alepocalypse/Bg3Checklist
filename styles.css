@@ -61,7 +61,7 @@ a:hover {
     font-size: 20px
     color: #0fb4bf; /* Off-white color */
     padding-left: 20px; /* Indent the areas */
-    margin-bottom: 20px; /* Add spacing between areas */
+    padding-bottom: 10px; /* Add spacing between areas */
 }
 
 /* Style the area text in blue with varying size */
@@ -70,7 +70,6 @@ a:hover {
     font-weight: normal;
     font-size: 16px; /* Adjust the font size as needed */
     padding-left: 40px; /* Indent more */
-    margin-bottom: 5px; /* Add spacing between acts */
     /* You can add more styles as needed */
 }
 
