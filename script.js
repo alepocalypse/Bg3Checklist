@@ -4,26 +4,28 @@ function renderChecklist() {
 
     // Fetch the JSON data
     fetch('checklistData.json')
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
             // Use the fetched data to render the checklist
-            data.acts.forEach(act => {
+            data.acts.forEach((act) => {
                 const actItem = document.createElement('li');
                 actItem.textContent = act.name;
 
                 const areasList = document.createElement('ul');
-                act.areas.forEach(area => {
+                act.areas.forEach((area) => {
                     const areaItem = document.createElement('li');
                     areaItem.textContent = area.name;
 
                     const checklist = document.createElement('ul');
-                    area.checklist.forEach(item => {
+                    area.checklist.forEach((item) => {
                         const checklistItem = document.createElement('li');
                         const checkbox = document.createElement('input');
                         checkbox.type = 'checkbox';
                         checkbox.checked = item.completed;
+                        const label = document.createElement('label');
+                        label.textContent = item.text;
                         checklistItem.appendChild(checkbox);
-                        checklistItem.appendChild(document.createTextNode(item.text));
+                        checklistItem.appendChild(label);
                         checklist.appendChild(checklistItem);
                     });
 
@@ -35,17 +37,19 @@ function renderChecklist() {
                 checklistContainer.appendChild(actItem);
             });
         })
-        .catch(error => {
+        .catch((error) => {
             console.error('Error loading checklist data:', error);
         });
 }
-    
+
 function saveChecklist() {
     const checklistContainer = document.getElementById('checklist');
-    const items = Array.from(checklistContainer.children).map((item) => ({
-        text: item.querySelector('input[type="checkbox"] + label').textContent,
-        completed: item.querySelector('input[type="checkbox"]').checked,
-    }));
+    const items = Array.from(checklistContainer.querySelectorAll('input[type="checkbox"]')).map(
+        (checkbox) => ({
+            text: checkbox.nextElementSibling.textContent,
+            completed: checkbox.checked,
+        })
+    );
 
     // Store the checklist items in local storage
     localStorage.setItem('checklistItems', JSON.stringify(items));
@@ -69,13 +73,13 @@ checklistContainer.addEventListener('change', (event) => {
         localStorage.setItem('checklistItems', JSON.stringify(storedItems));
     }
 });
-                             
+
 // Event listener for the "Save Checklist" button
 const saveButton = document.getElementById('saveButton');
 saveButton.addEventListener('click', () => {
     saveChecklist();
     alert('Checklist saved locally.');
 });
-    
+
 // Call the renderChecklist function to load and render the data
 renderChecklist();
