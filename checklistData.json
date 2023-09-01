@@ -76,10 +76,10 @@
                     "header": "Goblin Camp",
                     "checklist": [
                         { "text": "Rescue Volo", "completed": false },
-                        { "text": "Owlbear race + rescue <span class='spoiler'>and if you murder hobo the goblins, just keep the owlbear alive</span>", "completed": false },
+                        { "text": "Owlbear race + rescue <span class='spoiler'>and if you murder hobo the goblins just keep the owlbear alive</span>", "completed": false },
                         { "text": "Free Druid", "completed": false },
                         { "text": "Rescue the tortured guy", "completed": false },
-                        { "text": "Talk to Abdirak <span class='spoiler'> the BDSM priest, let him beat you 3 times and you gotta scream </span>", "completed": false },
+                        { "text": "Talk to Abdirak <span class='spoiler'> the BDSM priest let him beat you 3 times and you gotta scream </span>", "completed": false },
                         { "text": "Slay 3 True Souls", "completed": false },
                         { "text": "Keep the LUTE", "completed": false }
                     ]
@@ -99,8 +99,8 @@
                         { "text": "Find the Selunite outpost.", "completed": false },
                         { "text": "Sword in Stone", "completed": false },
                         { "text": "Find the Arcane Tower", "completed": false },
-                        { "text": "In Arcane Tower, break the Stool of Mysterious Strength", "completed": false },
-                        { "text": "In Arcane Tower, get the Gith Disk", "completed": false },
+                        { "text": "In Arcane Tower break the Stool of Mysterious Strength", "completed": false },
+                        { "text": "In Arcane Tower get the Gith Disk", "completed": false },
                         { "text": "Spectate a stoned drow", "completed": false },
                         { "text": "Festering Cove", "completed": false },
                         { "text": "Obtain the Sergeant’s boots, a gnome stole them.", "completed": false },
@@ -108,10 +108,10 @@
                         { "text": "Help Gut with the Duergar, is shes still kicking", "completed": false },
                         { "text": "Gnome in colony needs help", "completed": false },
                         { "text": "Rescue a dumb dwarf", "completed": false },
-                        { "text": "A very rare item in the boom mushrooms, try and save it", "completed": false },
+                        { "text": "A very rare item in the boom mushrooms try and save it", "completed": false },
                         { "text": "Meet Omellum in the Myconid Colony", "completed": false },
-                        { "text": "Find Sussur Bark, then head back to the Blacksmith Shop in Blighted Village", "completed": false },
-                        { "text": "Find Icy Metal, Icy Heave, and Icy Crystal", "completed": false },
+                        { "text": "Find Sussur Bark then head back to the Blacksmith Shop in Blighted Village", "completed": false },
+                        { "text": "Find Icy Metal Icy Heave, and Icy Crystal", "completed": false },
                     ]
                 },
                 {
@@ -129,7 +129,7 @@
                     "name": "Mountain Pass",
                     "header": "Mountain Pass",
                     "checklist": [
-                        { "text": "Speak with Elminster at the entrance to the Shadow-Cursed Lands, and then promptly turn around", "completed": false },
+                        { "text": "Speak with Elminster at the entrance to the Shadow-Cursed Lands and then promptly turn around", "completed": false },
                         { "text": "Complete the Githyanki Creche", "completed": false },
                         { "text": "Deal with the merchant woman who wants an egg", "completed": false },
                         { "text": "Find the Blood of Lathander", "completed": false }
