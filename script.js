@@ -41,7 +41,35 @@ function renderChecklist() {
             console.error('Error loading checklist data:', error);
         });
 }
+    
+function saveChecklist() {
+    const items = Array.from(checklist.children).map((item) => ({
+        text: item.querySelector('span').textContent,
+        completed: item.querySelector('input').checked,
+    }));
 
+    // Store the checklist items in local storage
+    localStorage.setItem('checklistItems', JSON.stringify(items));
+}
+
+// Event listener for marking items as completed
+actsContainer.addEventListener('change', (event) => {
+    if (event.target.type === 'checkbox') {
+        // Find the corresponding checklist item and update its completion status
+        const text = event.target.nextElementSibling.textContent;
+        const storedItems = JSON.parse(localStorage.getItem('checklistItems')) || [];
+
+        storedItems.forEach((storedItem) => {
+            if (storedItem.text === text) {
+                storedItem.completed = event.target.checked;
+            }
+        });
+
+        // Save the updated checklist
+        localStorage.setItem('checklistItems', JSON.stringify(storedItems));
+    }
+});
+    
 // Call the renderChecklist function to load and render the data
 renderChecklist();
     });
