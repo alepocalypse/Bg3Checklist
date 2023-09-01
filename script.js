@@ -6,6 +6,9 @@ function renderChecklist() {
     fetch('checklistData.json')
         .then((response) => response.json())
         .then((data) => {
+            // Load the saved checklist items from local storage
+            const savedItems = JSON.parse(localStorage.getItem('checklistItems')) || [];
+
             // Use the fetched data to render the checklist
             data.acts.forEach((act) => {
                 const actItem = document.createElement('li');
@@ -21,7 +24,15 @@ function renderChecklist() {
                         const checklistItem = document.createElement('li');
                         const checkbox = document.createElement('input');
                         checkbox.type = 'checkbox';
-                        checkbox.checked = item.completed;
+
+                        // Find the saved state for this checklist item
+                        const savedItem = savedItems.find((saved) => saved.text === item.text);
+                        if (savedItem) {
+                            checkbox.checked = savedItem.completed;
+                        } else {
+                            checkbox.checked = item.completed;
+                        }
+
                         const label = document.createElement('label');
                         label.textContent = item.text;
                         checklistItem.appendChild(checkbox);
