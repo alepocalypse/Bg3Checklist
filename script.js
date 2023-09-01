@@ -75,14 +75,22 @@ function renderChecklist() {
                         let labelText = item.text;
 
                         // Check if the item has a URL
-                        if (item.url) {
-                            const urlIcon = document.createElement('a');
-                            urlIcon.href = item.url;
-                            urlIcon.target = '_blank'; // Open the link in a new tab
-                            urlIcon.textContent = '\u127760'; // Unicode for the globe icon
-                            urlIcon.style.paddingLeft = '5px'; // Add some space between text and icon
-                            label.appendChild(urlIcon);
-                        }
+                     f (item.url) {
+                        const linkIcon = document.createElement('i'); // Create an <i> element for the Font Awesome icon
+                        linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
+                        linkIcon.style.float = 'right'; // Align the icon to the right
+                        label.appendChild(linkIcon);
+
+                        // Create a link element for the label text
+                        const linkText = document.createElement('a');
+                        linkText.href = item.url;
+                        linkText.target = '_blank'; // Open the link in a new tab
+                        linkText.textContent = labelText.replace(/<[^>]*>/g, ''); // Remove HTML tags
+                        label.appendChild(linkText);
+                    } else {
+                        // If no URL, display the label text as it is
+                        label.innerHTML = labelText; // Use innerHTML to render HTML
+                            }
 
                         // Check if the item has spoiler tags
                         if (labelText.includes('<span class=\'spoiler\'>')) {
