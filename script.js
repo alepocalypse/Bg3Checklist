@@ -74,7 +74,6 @@ function renderChecklist() {
                         const label = document.createElement('label');
                         let labelText = item.text;
 
-                        // Check if the item has a URL
                         if (item.url) {
                             // Create a div to contain the label text and the link icon
                             const labelContainer = document.createElement('div');
@@ -84,12 +83,6 @@ function renderChecklist() {
                             linkIcon.classList.add('fas', 'fa-link'); // Add Font Awesome classes for the link icon
                             linkIcon.style.marginRight = '5px'; // Adjust the margin to control the position
                             linkIcon.style.cursor = 'pointer'; // Change cursor to pointer to indicate it's clickable
-
-                            // Add a click event listener to the icon to open the link in a new tab and switch to that tab
-                            linkIcon.addEventListener('click', () => {
-                                const newTab = window.open(item.url, '_blank');
-                                newTab.focus(); // Switch to the new tab
-                            });
 
                             // Create a link element for the label text
                             const linkText = document.createElement('a');
@@ -128,21 +121,33 @@ function renderChecklist() {
 
                                 label.appendChild(spoilerText);
                             } else {
-                                label.innerHTML = labelText; // Use innerHTML to render HTML
+                                // If no URL and no spoiler, display the label text as it is
+                                label.textContent = labelText;
                             }
                         }
 
+                        // Add the checkbox before the label
                         checklistItem.appendChild(checkbox);
+
+                        // Add the label to the checklist item
                         checklistItem.appendChild(label);
+
+                        // Add the checklist item to the checklist div
                         checklistDiv.appendChild(checklistItem);
                     });
 
+                    // Add the area item to the areas list
                     areasList.appendChild(areaItem);
                 });
 
+                // Add the areas list to the areas list div
                 areasListDiv.appendChild(areasList);
+
+                // Add the act header and areas list div to the act item
                 actItem.appendChild(actHeader);
                 actItem.appendChild(areasListDiv);
+
+                // Add the act item to the checklist container
                 checklistContainer.appendChild(actItem);
             });
         })
