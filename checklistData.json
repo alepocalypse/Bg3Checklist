@@ -8,7 +8,7 @@
                     "name": "Nautiloid",
                     "header": "Nautiloid",
                     "checklist": [
-                        { "text": "Save the <span class='spoiler'> brain </span> in 2nd Room", "completed": false, "url": "https://bg3.wiki/wiki/Us" // Optional URL field },
+                        { "text": "Save the <span class='spoiler'> brain </span> in 2nd Room", "completed": false, "url": "https://bg3.wiki/wiki/Us"},
                         { "text": "Free Shadowheart", "completed": false },
                         { "text": "Defeat Commander Zhalk and get his sword.", "completed": false }
                     ]
