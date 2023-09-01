@@ -51,14 +51,14 @@ a:hover {
 /* Style the "Act" as a heading in black */
 #checklist > li {
     font-weight: bold;
-    font-size: 24px
+    font-size: 24px;
     color: black;
     margin-bottom: 20px; /* Add spacing between acts */
 }
 
 /* Style the areas items in off-white text */
 #checklist ul li {
-    font-size: 20px
+    font-size: 20px;
     color: #0fb4bf; /* Off-white color */
     padding-left: 20px; /* Indent the areas */
 }
