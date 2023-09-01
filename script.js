@@ -51,19 +51,6 @@ function saveChecklist() {
     localStorage.setItem('checklistItems', JSON.stringify(items));
 }
 
-const actsContainer = document.getElementById('acts');
-actsContainer.addEventListener('change', (event) => {
-    if (event.target.type === 'checkbox') {
-        // Rest of your event listener code...
-    }
-});
-
-const areaContainer = document.getElementById('area');
-// Event listener for some interaction with areaContainer
-areaContainer.addEventListener('click', (event) => {
-    // Handle interactions with the area container, if needed...
-});
-
 // Event listener for marking items as completed
 const checklistContainer = document.getElementById('checklist');
 checklistContainer.addEventListener('change', (event) => {
