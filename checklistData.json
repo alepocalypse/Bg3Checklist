@@ -4,22 +4,21 @@
 "name": "Act 1",
             "areas": [
                 {
-                    "name": "Aboard Nautiloid",
+                    "name": "Nautiloid",
                     "checklist": [
-                        { "text": "Save the brain.", "completed": false },
-                        { "text": "Free Shadowheart (Necessary to recruit her).", "completed": false },
-                        { "text": "Defeat Commander Zhalk and obtain his sword.", "completed": false }
+                        { "text": "Save the <span class='spoiler'> brain </span> in 2nd Room", "completed": false },
+                        { "text": "Free Shadowheart", "completed": false },
+                        { "text": "Defeat Commander Zhalk and get his sword.", "completed": false }
                     ]
                 },
                 {
-                    "name": "Nautiloid Crash",
+                    "name": "Crash Site",
                     "checklist": [
-                        { "text": "Free Lae’zel (recruit her as a companion).", "completed": false },
-                        { "text": "Find Astarion (recruit him as a companion).", "completed": false },
-                        { "text": "Wake up Shadowheart (recruit her as a companion).", "completed": false },
-                        { "text": "Free Gale from the rift (recruit him as a companion).", "completed": false },
-                        { "text": "Unlock Speak With Dead and Talk With Animal spells. You’ll constantly use these throughout the game.", "completed": false },
-                        { "text": "Investigate Dank Crypt (to the East of your starting point) and find Withers - This will allow you to reclass at any time at camp for 100 Gold.", "completed": false }
+                        { "text": "Recruit Shadowheart", "completed": false },
+                        { "text": "Recruit Astarion", "completed": false },
+                        { "text": "Recruit Gale", "completed": false },
+                        { "text": "Free Lae’zel", "completed": false },
+                        { "text": "Complete Dank Crypt <span class='spoiler'> and meet Withers </span> ", "completed": false }
                     ]
                 },
                 {
