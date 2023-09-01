@@ -193,5 +193,62 @@ clearButton.addEventListener('click', () => {
     }
 });
 
+// Function to save the expanded/collapsed state
+function saveExpandedState() {
+    const expandedState = {};
+
+    // Select all act headers
+    const actHeaders = document.querySelectorAll('.act-header');
+
+    // Iterate through each act header
+    actHeaders.forEach((actHeader) => {
+        // Get the act name
+        const actName = actHeader.textContent.trim();
+
+        // Check if the area list is expanded or collapsed
+        const isExpanded = actHeader.nextElementSibling.style.display === 'block';
+
+        // Save the state in the expandedState object
+        expandedState[actName] = isExpanded;
+    });
+
+    // Save the expandedState object to localStorage
+    localStorage.setItem('expandedState', JSON.stringify(expandedState));
+}
+
+// Function to load the expanded/collapsed state
+function loadExpandedState() {
+    // Retrieve the expandedState object from localStorage
+    const expandedState = JSON.parse(localStorage.getItem('expandedState'));
+
+    if (expandedState) {
+        // Iterate through the saved state and apply it to act headers
+        for (const actName in expandedState) {
+            if (expandedState.hasOwnProperty(actName)) {
+                // Find the corresponding act header
+                const actHeader = document.querySelector('.act-header:contains("' + actName + '")');
+
+                if (actHeader) {
+                    // Expand or collapse the area list based on the saved state
+                    actHeader.nextElementSibling.style.display = expandedState[actName] ? 'block' : 'none';
+                }
+            }
+        }
+    }
+}
+
+// Call loadExpandedState when the page loads to restore the state
+loadExpandedState();
+
+// Add event listeners to act headers for expanding/collapsing
+const actHeaders = document.querySelectorAll('.act-header');
+actHeaders.forEach((actHeader) => {
+    actHeader.addEventListener('click', () => {
+        const areaList = actHeader.nextElementSibling;
+        areaList.style.display = areaList.style.display === 'none' ? 'block' : 'none';
+        saveExpandedState(); // Save the state when an act header is clicked
+    });
+});
+
 // Call the renderChecklist function to load and render the data
 renderChecklist();
