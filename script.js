@@ -60,7 +60,7 @@ function renderChecklist() {
 
                             label.appendChild(spoilerText);
                         } else {
-                            label.textContent = labelText;
+                            label.innerHTML = labelText; // Use innerHTML to render HTML
                         }
 
                         checklistItem.appendChild(checkbox);
