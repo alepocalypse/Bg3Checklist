@@ -1,7 +1,7 @@
 {
     "acts": [
         {
-"name": "Act 1",
+            "name": "Act 1",
             "areas": [
                 {
                     "name": "Nautiloid",
@@ -24,28 +24,36 @@
                 {
                     "name": "Emerald Grove",
                     "checklist": [
-                        { "text": "Go to Druid’s Grove and meet Will, who’s training children with swords. (Recruit him as a companion).", "completed": false },
-                        { "text": "Speak to Volo, which will make him move to the Goblin Camp. Then speak to him at the Goblin Camp, save him, and he’ll move to your camp.", "completed": false },
-                        { "text": "Talk to Khaga and Rath. Learn about Khaga’s plan for the ritual. Rath will ask you to save Halsin.", "completed": false },
-                        { "text": "Talk to the Strange Ox at Druid’s Grove.", "completed": false },
-                        { "text": "Talk to Alfira and learn how to play an instrument.", "completed": false },
-                        { "text": "Talk to Dammon (he’s needed for Karlach’s companion quest after recruiting).", "completed": false },
-                        { "text": "Save the Tiefling from the Bugbear Assassin.", "completed": false },
-                        { "text": "Rescue the child from the Harpies. Found to the Northeast of the Grove’s heart, keep going until you hear singing.", "completed": false },
-                        { "text": "Absolute Cultists ambush you near the Grove.", "completed": false }
+                        { "text": "Defend the Grove", "completed": false },
+                        { "text": "Recruit Wyll", "completed": false },
+                        { "text": "Speak to Volo", "completed": false },
+                        { "text": "Talk to Khaga and Rath", "completed": false },
+                        { "text": "Talk to Arbella's Parents", "completed": false },
+                        { "text": "Interact with the Strange Ox", "completed": false },
+                        { "text": "Talk to Alfira", "completed": false },
+                        { "text": "Talk to Dammon", "completed": false },
+                        { "text": "Stop the Assassination", "completed": false },
+                        { "text": "Rescue on the Beach", "completed": false }
                     ]
                 },
                 {
                     "name": "Blighted Village",
                     "checklist": [
-                        { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home, and then finish them.", "completed": false },
-                        { "text": "Find the book Necromancy of Thay.", "completed": false },
-                        { "text": "Climb into the well and defeat the Astral Spider Queen and its children.", "completed": false },
-                        { "text": "Rescue Barcus the Gnome from the Goblins and Windmill.", "completed": false },
-                        { "text": "Find Scratch the Dog, who’s roaming just outside the village, and lead him to your camp.", "completed": false },
-                        { "text": "Vanquish or recruit the trio of Ogres.", "completed": false },
-                        { "text": "In the barn on the North side of town, there’s an “interesting” scene between a Bugbear and Ogre.", "completed": false },
-                        { "text": "A cave outside of the village has an Owlbear and its cub you can interact with.", "completed": false }
+                        { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home", "completed": false },
+                        { "text": "Search the Herbalist <span class='spoiler'> and get the book Necromancy of Thay</span>", "completed": false },
+                        { "text": "Down the Well and <span class='spoiler'>and kill spider queen </span>", "completed": false },
+                        { "text": "Rescue at the Windmill", "completed": false },
+                        { "text": "Find Scratch the Dog", "completed": false },
+                        { "text": "Deal with the Ogres", "completed": false },
+                        { "text": "Love in the Barn", "completed": false },
+                        { "text": "Owlbear cave, <span class='spoiler'> Do not kill the baby</span>", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Risen Road",
+                    "checklist": [
+                        { "text": "Recruit Karlach", "completed": false },
+                        { "text": "Handle Karlach's foes", "completed": false }
                     ]
                 }
             ]
