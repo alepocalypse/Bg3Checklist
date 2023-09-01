@@ -20,6 +20,7 @@ function renderChecklist() {
                 // Create a div to contain the area lists
                 const areasListDiv = document.createElement('div');
                 areasListDiv.classList.add('area-lists');
+                areasListDiv.style.display = 'none'; // Initially hide the area lists
 
                 actHeader.addEventListener('click', () => {
                     // Toggle the visibility of the area lists when the act header is clicked
@@ -106,16 +107,19 @@ function renderChecklist() {
                         checklistDiv.appendChild(checklistItem);
                     });
 
-                    // Add the areas list to the areas list div
-                    areasListDiv.appendChild(areasList);
-
-                    // Add the act header and areas list div to the act item
-                    actItem.appendChild(actHeader);
-                    actItem.appendChild(areasListDiv);
-
-                    // Add the act item to the checklist container
-                    checklistContainer.appendChild(actItem);
+                    // Add the area item to the areas list
+                    areasList.appendChild(areaItem);
                 });
+
+                // Add the areas list to the areas list div
+                areasListDiv.appendChild(areasList);
+
+                // Add the act header and areas list div to the act item
+                actItem.appendChild(actHeader);
+                actItem.appendChild(areasListDiv);
+
+                // Add the act item to the checklist container
+                checklistContainer.appendChild(actItem);
             });
         })
         .catch((error) => {
