@@ -84,13 +84,34 @@ a:hover {
     color: #fff; /* Change text color to white when hovered */
     background-color: transparent; /* Make the background transparent when hovered */
 }
-/* Style the area headers */
+
+/* Style the area headers for collapsing */
 .area-header {
-    font-size: 20px
+    font-size: 20px;
     color: #0fb4bf; /* Off-white color */
     cursor: pointer; /* Add a pointer cursor for interactivity */
     margin: 10px 0; /* Add spacing between area headers */
     font-weight: normal;
+    display: flex; /* Use flex display for alignment */
+    justify-content: space-between; /* Space-between for aligning the +/- icons */
+    align-items: center; /* Center vertically */
+}
+
+/* Style the area headers' icons */
+.area-header span {
+    font-size: 24px; /* Adjust the icon size */
+    margin-right: 5px; /* Add spacing between icon and text */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+/* Rotate the plus icon when the content is expanded */
+.area-header.expanded span:first-child {
+    transform: rotate(45deg);
+}
+
+/* Rotate the minus icon when the content is collapsed */
+.area-header.collapsed span:last-child {
+    transform: rotate(45deg);
 }
 
 /* Style the area-checklist to hide by default */
