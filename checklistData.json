@@ -6,7 +6,7 @@
                 {
                     "name": "Nautiloid",
                     "checklist": [
-                        { "text": "Save [spoiler]The Brain (Room 2)[/spoiler] (Room 2)", "completed": false },
+                        { "text": "Save <span class='spoiler'>The Brain</span> (Room 2)", "completed": false },
                         { "text": "Free Shadowheart", "completed": false },
                         { "text": "Defeat Commander Zhalk, obtain Sword", "completed": false }
                     ]
