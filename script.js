@@ -1,12 +1,15 @@
 function renderChecklist() {
+    console.log('Rendering checklist...'); // Added for logging
     const checklistContainer = document.getElementById('checklist');
 
     // Fetch the JSON data
     fetch('checklistData.json')
         .then((response) => response.json())
         .then((data) => {
+            console.log('Fetched JSON data:', data); // Added for logging
             // Load the saved checklist items from local storage
             const savedItems = JSON.parse(localStorage.getItem('checklistItems')) || [];
+            console.log('Loaded saved checklist items:', savedItems); // Added for logging
 
             // Iterate through the acts in the JSON data
             data.acts.forEach((act) => {
@@ -133,6 +136,7 @@ function renderChecklist() {
 }
 
 function saveChecklist() {
+    console.log('Saving checklist...'); // Added for logging
     const checklistItems = [...document.querySelectorAll('input[type="checkbox"]')].map((checkbox) => {
         const text = checkbox.nextElementSibling.textContent;
         const spoilerRevealed = checkbox.nextElementSibling.querySelector('.spoiler:not(.spoiler)') === null;
@@ -145,6 +149,7 @@ function saveChecklist() {
     });
 
     localStorage.setItem('checklistItems', JSON.stringify(checklistItems));
+    console.log('Checklist saved:', checklistItems); // Added for logging
 }
 
 // Event listener for marking items as completed
@@ -163,6 +168,7 @@ checklistContainer.addEventListener('change', (event) => {
 
         // Save the updated checklist
         localStorage.setItem('checklistItems', JSON.stringify(storedItems));
+        console.log('Updated checklist:', storedItems); // Added for logging
     }
 });
 
@@ -172,6 +178,8 @@ headers.forEach((header) => {
     header.addEventListener('click', () => {
         const content = header.nextElementSibling; // Get the content associated with the header
         content.style.display = content.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
+        saveExpandedState(); // Save the expanded state when a header is clicked
+        console.log('Expanded state:', content.style.display); // Added for logging
     });
 });
 
@@ -198,6 +206,7 @@ clearButton.addEventListener('click', () => {
 
 // Function to save the expanded/collapsed state
 function saveExpandedState() {
+    console.log('Saving expanded state...'); // Added for logging
     const expandedState = {};
 
     // Select all act headers
@@ -217,13 +226,15 @@ function saveExpandedState() {
 
     // Save the expandedState object to localStorage
     localStorage.setItem('expandedState', JSON.stringify(expandedState));
-    console.log('Saved expanded state:', expandedState);
+    console.log('Saved expanded state:', expandedState); // Added for logging
 }
 
-/function loadExpandedState() {
+// Function to load the expanded/collapsed state
+function loadExpandedState() {
+    console.log('Loading expanded state...'); // Added for logging
     // Retrieve the expandedState object from localStorage
     const expandedState = JSON.parse(localStorage.getItem('expandedState'));
-    console.log('Loaded expanded state:', expandedState);
+    console.log('Loaded expanded state:', expandedState); // Added for logging
 
     if (expandedState) {
         // Iterate through the saved state and apply it to act headers
@@ -253,4 +264,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call loadExpandedState when the page loads to restore the state
     loadExpandedState();
 });
-
