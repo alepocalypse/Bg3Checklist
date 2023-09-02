@@ -197,6 +197,9 @@ clearButton.addEventListener('click', () => {
 function saveExpandedState() {
     const expandedState = {};
 
+    localStorage.setItem('expandedState', JSON.stringify(expandedState));
+    console.log('Saved expanded state:', expandedState);
+    
     // Select all act headers
     const actHeaders = document.querySelectorAll('.act-header');
 
@@ -220,7 +223,8 @@ function saveExpandedState() {
 function loadExpandedState() {
     // Retrieve the expandedState object from localStorage
     const expandedState = JSON.parse(localStorage.getItem('expandedState'));
-
+    console.log('Loaded expanded state:', expandedState);
+    
     if (expandedState) {
         // Iterate through the saved state and apply it to act headers
         const actHeaders = document.querySelectorAll('.act-header');
