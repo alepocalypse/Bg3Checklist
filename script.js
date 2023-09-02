@@ -8,14 +8,16 @@ function renderChecklist() {
             // Load the saved checklist items from local storage
             const savedItems = JSON.parse(localStorage.getItem('checklistItems')) || [];
 
-            // Use the fetched data to render the checklist
+            // Iterate through the acts in the JSON data
             data.acts.forEach((act) => {
+                // Create an act header element
                 const actItem = document.createElement('li');
 
                 // Create a header element for the act
                 const actHeader = document.createElement('h1');
                 actHeader.textContent = act.name;
                 actHeader.classList.add('act-header'); // Add a class for styling
+                actHeader.dataset.act = act.name; // Add the data-act attribute
 
                 // Create a div to contain the area lists
                 const areasListDiv = document.createElement('div');
@@ -29,6 +31,7 @@ function renderChecklist() {
                     } else {
                         areasListDiv.style.display = 'none';
                     }
+                    saveExpandedState(); // Save the state when an act header is clicked
                 });
 
                 // Create a ul element to contain the area lists
@@ -63,7 +66,7 @@ function renderChecklist() {
                         const checklistItem = document.createElement('li');
                         const checkbox = document.createElement('input');
                         checkbox.type = 'checkbox';
-                                        
+
                         // Find the saved state for this checklist item
                         const savedItem = savedItems.find((saved) => saved.text === item.text);
                         if (savedItem) {
@@ -72,15 +75,15 @@ function renderChecklist() {
                         } else {
                             checkbox.checked = item.completed;
                         }
-                        
+
                         const label = document.createElement('label');
                         let labelText = item.text;
-                        
+
                         if (labelText.includes('<span class=\'spoiler\'>')) {
                             const spoilerText = document.createElement('span');
                             spoilerText.innerHTML = labelText;
                             const spoilerSpan = spoilerText.querySelector('.spoiler');
-                        
+
                             if (savedItem && savedItem.spoilerRevealed) {
                                 spoilerSpan.classList.remove('spoiler');
                                 checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
@@ -92,19 +95,19 @@ function renderChecklist() {
                                     saveChecklist();
                                 });
                             }
-                        
+
                             // Set labelText to the updated spoilerText
                             labelText = spoilerText.innerHTML;
                         }
-                        
+
                         label.innerHTML = labelText;
-                        
+
                         // Add the checkbox before the label
                         checklistItem.appendChild(checkbox);
-                        
+
                         // Add the label to the checklist item
                         checklistItem.appendChild(label);
-                        
+
                         // Add the checklist item to the checklist div
                         checklistDiv.appendChild(checklistItem);
                     });
