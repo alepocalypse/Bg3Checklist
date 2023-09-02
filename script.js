@@ -177,9 +177,14 @@ const headers = document.querySelectorAll('.area-header, .act-header');
 headers.forEach((header) => {
     header.addEventListener('click', () => {
         const content = header.nextElementSibling; // Get the content associated with the header
-        content.style.display = content.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
-        saveExpandedState(); // Save the expanded state when a header is clicked
-        console.log('Expanded state:', content.style.display); // Added for logging
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+
+        // Save the expanded state when a header is clicked
+        saveExpandedState();
     });
 });
 
