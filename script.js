@@ -254,12 +254,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadExpandedState();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const act1Header = document.querySelector('.act-header[data-act="Act 1"]');
-    if (act1Header) {
-        act1Header.nextElementSibling.style.display = 'block';
-    }
-});
-
 // Call loadExpandedState when the page loads to restore the state
 loadExpandedState();
