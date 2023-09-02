@@ -237,15 +237,14 @@ function loadExpandedState() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const act1Header = document.querySelector('.act-header[data-act="Act 1"]');
+    if (act1Header) {
+        act1Header.nextElementSibling.style.display = 'block';
+    }
 
-// Add event listeners to act headers for expanding/collapsing
-const actHeaders = document.querySelectorAll('.act-header');
-actHeaders.forEach((actHeader) => {
-    actHeader.addEventListener('click', () => {
-        const areaList = actHeader.nextElementSibling;
-        areaList.style.display = areaList.style.display === 'none' ? 'block' : 'none';
-        saveExpandedState(); // Save the state when an act header is clicked
-    });
+    // Call loadExpandedState when the page loads to restore the state
+    loadExpandedState();
 });
 
 // Call the renderChecklist function to load and render the data
