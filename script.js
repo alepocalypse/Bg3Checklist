@@ -250,9 +250,10 @@ document.addEventListener('DOMContentLoaded', () => {
         act1Header.nextElementSibling.style.display = 'block';
     }
 
+    // Call renderChecklist to load and render the checklist
+    renderChecklist();
+
     // Call loadExpandedState when the page loads to restore the state
     loadExpandedState();
 });
 
-// Call loadExpandedState when the page loads to restore the state
-loadExpandedState();
