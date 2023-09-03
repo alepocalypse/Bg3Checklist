@@ -45,50 +45,58 @@ function renderChecklist() {
                     areaItem.appendChild(checklistDiv);
 
                     area.checklist.forEach((item) => {
-                        const checklistItem = document.createElement('li');
-                        const checkbox = document.createElement('input');
-                        checkbox.type = 'checkbox';
+    const checklistItem = document.createElement('li');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
 
-                        // Find the saved state for this checklist item
-                        const savedItem = savedItems.find((saved) => saved.text === item.text);
-                        if (savedItem) {
-                            // Update the checkbox state based on the saved data
-                            checkbox.checked = savedItem.completed;
-                        } else {
-                            checkbox.checked = item.completed;
-                        }
+    // Find the saved state for this checklist item
+    const savedItem = savedItems.find((saved) => saved.text === item.text);
+    if (savedItem) {
+        // Update the checkbox state based on the saved data
+        checkbox.checked = savedItem.completed;
+    } else {
+        checkbox.checked = item.completed;
+    }
 
-                        const label = document.createElement('label');
-                        let labelText = item.text;
+    const label = document.createElement('label');
 
-                        if (item.url) {
-                            // If the checklist item has a URL, create a clickable Font Awesome icon
-                            const icon = document.createElement('i');
-                            icon.classList.add('fas', 'fa-external-link-alt'); // Font Awesome classes for an external link icon
+    if (item.url) {
+        // Create a clickable Font Awesome icon
+        const icon = document.createElement('i');
+        icon.classList.add('fas', 'fa-external-link-alt'); // Font Awesome classes for an external link icon
 
-                            // Create an anchor element to wrap the icon and make it clickable
-                            const link = document.createElement('a');
-                            link.href = item.url;
-                            link.target = '_blank'; // Open the link in a new tab
+        // Create a span to contain the icon
+        const iconSpan = document.createElement('span');
+        iconSpan.appendChild(icon);
 
-                            // Append the icon to the anchor element
-                            link.appendChild(icon);
+        // Create a span for the text
+        const textSpan = document.createElement('span');
+        textSpan.innerHTML = item.text;
 
-                            // Append the anchor element and the label to the checklist item
-                            checklistItem.appendChild(link);
-                            checklistItem.appendChild(label);
-                        } else {
-                            label.innerHTML = labelText;
-                            // Add the label to the checklist item
-                            checklistItem.appendChild(label);
-                        }
+        // Create an anchor element to wrap both the icon and text
+        const link = document.createElement('a');
+        link.href = item.url;
+        link.target = '_blank'; // Open the link in a new tab
 
-                        // Add the checkbox before the label
-                        checklistItem.appendChild(checkbox);
+        // Append the icon span and text span to the anchor element
+        link.appendChild(iconSpan);
+        link.appendChild(textSpan);
 
-                        // Add the checklist item to the checklist div
-                        checklistDiv.appendChild(checklistItem);
-                    });
+        // Append the anchor element to the label
+        label.appendChild(link);
+    } else {
+        label.innerHTML = item.text;
+    }
+
+    // Add the checkbox before the label
+    checklistItem.appendChild(checkbox);
+
+    // Add the label to the checklist item
+    checklistItem.appendChild(label);
+
+    // Add the checklist item to the checklist div
+    checklistDiv.appendChild(checklistItem);
+});
 
                     // Add the area item to the areas list
                     areasList.appendChild(areaItem);
