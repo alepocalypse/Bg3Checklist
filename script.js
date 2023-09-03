@@ -61,34 +61,30 @@ function renderChecklist() {
                         const label = document.createElement('label');
                         let labelText = item.text;
 
-                        if (labelText.includes('<span class=\'spoiler\'>')) {
-                            const spoilerText = document.createElement('span');
-                            spoilerText.innerHTML = labelText;
-                            const spoilerSpan = spoilerText.querySelector('.spoiler');
+                        if (item.url) {
+                            // If the checklist item has a URL, create a clickable Font Awesome icon
+                            const icon = document.createElement('i');
+                            icon.classList.add('fas', 'fa-external-link-alt'); // Font Awesome classes for an external link icon
 
-                            if (savedItem && savedItem.spoilerRevealed) {
-                                spoilerSpan.classList.remove('spoiler');
-                                checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
-                            } else {
-                                // Add a click event listener to reveal the spoiler
-                                spoilerSpan.addEventListener('click', () => {
-                                    spoilerSpan.classList.remove('spoiler');
-                                    checkbox.nextElementSibling.classList.remove('spoiler'); // Remove spoiler class from label
-                                    saveChecklist();
-                                });
-                            }
+                            // Create an anchor element to wrap the icon and make it clickable
+                            const link = document.createElement('a');
+                            link.href = item.url;
+                            link.target = '_blank'; // Open the link in a new tab
 
-                            // Set labelText to the updated spoilerText
-                            labelText = spoilerText.innerHTML;
+                            // Append the icon to the anchor element
+                            link.appendChild(icon);
+
+                            // Append the anchor element and the label to the checklist item
+                            checklistItem.appendChild(link);
+                            checklistItem.appendChild(label);
+                        } else {
+                            label.innerHTML = labelText;
+                            // Add the label to the checklist item
+                            checklistItem.appendChild(label);
                         }
-
-                        label.innerHTML = labelText;
 
                         // Add the checkbox before the label
                         checklistItem.appendChild(checkbox);
-
-                        // Add the label to the checklist item
-                        checklistItem.appendChild(label);
 
                         // Add the checklist item to the checklist div
                         checklistDiv.appendChild(checklistItem);
