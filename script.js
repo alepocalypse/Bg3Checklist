@@ -83,7 +83,12 @@ function createChecklistItem(item, savedItems) {
         checkbox.checked = item.completed;
     }
 
+    // Create a label element
     const label = document.createElement('label');
+
+    // Create a span for the text
+    const textSpan = document.createElement('span');
+    textSpan.innerHTML = item.text;
 
     if (item.url) {
         // Create a clickable Font Awesome icon
@@ -94,23 +99,28 @@ function createChecklistItem(item, savedItems) {
         const iconSpan = document.createElement('span');
         iconSpan.appendChild(icon);
 
-        // Create a span for the text
-        const textSpan = document.createElement('span');
-        textSpan.innerHTML = item.text;
+        // Add the text span first
+        label.appendChild(textSpan);
 
-        // Create an anchor element to wrap both the icon and text
+        // Create an anchor element to wrap the icon
         const link = document.createElement('a');
         link.href = item.url;
         link.target = '_blank'; // Open the link in a new tab
 
-        // Append the icon span and text span to the anchor element
+        // Append the icon span to the anchor element
         link.appendChild(iconSpan);
-        link.appendChild(textSpan);
 
         // Append the anchor element to the label
         label.appendChild(link);
+
+        // Add a click event listener to the icon
+        icon.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default link behavior (opening in a new tab)
+            window.open(item.url, '_blank'); // Open the link in a new tab
+        });
     } else {
-        label.innerHTML = item.text;
+        // If there's no URL, just add the text span
+        label.appendChild(textSpan);
     }
 
     // Add the checkbox before the label
