@@ -65,7 +65,7 @@ a:hover {
 
 /* Style the area text in blue with varying size */
 #checklist ul ul li {
-    color: #F0F0F0;
+    color: #f0f0f0;
     font-weight: normal;
     font-size: 16px; /* Adjust the font size as needed */
     padding-left: 40px; /* Indent more */
@@ -91,7 +91,7 @@ a:hover {
     color: #0fb4bf; /* Off-white color */
     cursor: pointer; /* Add a pointer cursor for interactivity */
     margin: 10px 0; /* Add spacing between area headers */
-    font-weight: normal;
+    font-weight: bold; /* Make area headers bold */
     display: flex; /* Use flex display for alignment */
     justify-content: space-between; /* Space-between for aligning the +/- icons */
     align-items: center; /* Center vertically */
@@ -124,8 +124,9 @@ a:hover {
 /* Style the area-checklist items */
 .area-checklist li {
     margin: 5px 0;
+    color: #ccc; /* Very light gray color for checklist items */
+    font-weight: normal; /* Remove bold from checklist items */
 }
-
 
 /* Style the page container */
 .page-container {
