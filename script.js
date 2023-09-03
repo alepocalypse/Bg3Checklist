@@ -110,6 +110,9 @@ function createChecklistItem(item, savedItems) {
         // Append the icon span to the anchor element
         link.appendChild(iconSpan);
 
+        / Add a bit of margin between the text and the link (adjust the margin as needed)
+    textSpan.style.marginRight = '5px'; // You can adjust the value for more or less space
+
         // Append the anchor element to the label
         label.appendChild(link);
 
