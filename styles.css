@@ -118,7 +118,7 @@ a:hover {
 .area-checklist {
     list-style-type: none;
     padding-left: 20px; /* Add indentation for checklist items */
-    display: none; /* Hide the checklist by default */
+ /*   display: none; /* Hide the checklist by default */
 }
 
 /* Style the area-checklist items */
