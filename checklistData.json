@@ -138,6 +138,52 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Act 2",
+            "expanded": false,
+            "header": "Act 2",
+            "areas": [
+                {
+                    "name": "Area 1",
+                    "header": "Area 1",
+                    "checklist": [
+                        { "text": "Placeholder Checklist Item 1", "completed": false },
+                        { "text": "Placeholder Checklist Item 2", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Area 2",
+                    "header": "Area 2",
+                    "checklist": [
+                        { "text": "Placeholder Checklist Item 1", "completed": false },
+                        { "text": "Placeholder Checklist Item 2", "completed": false }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Act 3",
+            "expanded": false,
+            "header": "Act 3",
+            "areas": [
+                {
+                    "name": "Area 1",
+                    "header": "Area 1",
+                    "checklist": [
+                        { "text": "Placeholder Checklist Item 1", "completed": false },
+                        { "text": "Placeholder Checklist Item 2", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Area 2",
+                    "header": "Area 2",
+                    "checklist": [
+                        { "text": "Placeholder Checklist Item 1", "completed": false },
+                        { "text": "Placeholder Checklist Item 2", "completed": false }
+                    ]
+                }
+            ]
         }
     ]
 }
