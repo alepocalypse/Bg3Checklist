@@ -45,6 +45,31 @@ function renderChecklist() {
                     areaItem.appendChild(checklistDiv);
 
                     area.checklist.forEach((item) => {
+                        const checklistItem = createChecklistItem(item, savedItems);
+                        checklistDiv.appendChild(checklistItem);
+                    });
+
+                    // Add the area item to the areas list
+                    areasList.appendChild(areaItem);
+                });
+
+                // Add the areas list to the areas list div
+                areasListDiv.appendChild(areasList);
+
+                // Add the act header and areas list div to the act item
+                actItem.appendChild(actHeader);
+                actItem.appendChild(areasListDiv);
+
+                // Add the act item to the checklist container
+                checklistContainer.appendChild(actItem);
+            });
+        })
+        .catch((error) => {
+            console.error('Error loading checklist data:', error);
+        });
+}
+
+function createChecklistItem(item, savedItems) {
     const checklistItem = document.createElement('li');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
@@ -94,29 +119,9 @@ function renderChecklist() {
     // Add the label to the checklist item
     checklistItem.appendChild(label);
 
-    // Add the checklist item to the checklist div
-    checklistDiv.appendChild(checklistItem);
-});
-
-                    // Add the area item to the areas list
-                    areasList.appendChild(areaItem);
-                });
-
-                // Add the areas list to the areas list div
-                areasListDiv.appendChild(areasList);
-
-                // Add the act header and areas list div to the act item
-                actItem.appendChild(actHeader);
-                actItem.appendChild(areasListDiv);
-
-                // Add the act item to the checklist container
-                checklistContainer.appendChild(actItem);
-            });
-        })
-        .catch((error) => {
-            console.error('Error loading checklist data:', error);
-        });
+    return checklistItem;
 }
+
 
 function saveChecklist() {
     console.log('Saving checklist...'); // Added for logging
