@@ -89,7 +89,6 @@ a:hover {
 .area-header {
     font-size: 20px;
     color: #0fb4bf; /* Off-white color */
-    cursor: pointer; /* Add a pointer cursor for interactivity */
     margin: 10px 0; /* Add spacing between area headers */
     font-weight: bold; /* Make area headers bold */
     display: flex; /* Use flex display for alignment */
