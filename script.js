@@ -1,20 +1,15 @@
-function log(message) {
-    const timestamp = new Date().toLocaleTimeString();
-    console.log(`[${timestamp}] ${message}`);
-}
-
 function renderChecklist() {
-    log('Rendering checklist...'); // Added for logging
+    console.log('Rendering checklist...'); // Added for logging
     const checklistContainer = document.getElementById('checklist');
 
     // Fetch the JSON data
     fetch('checklistData.json')
         .then((response) => response.json())
         .then((data) => {
-            log('Fetched JSON data:', data); // Added for logging
+            console.log('Fetched JSON data:', data); // Added for logging
             // Load the saved checklist items from local storage
             const savedItems = JSON.parse(localStorage.getItem('checklistItems')) || [];
-            log('Loaded saved checklist items:', savedItems); // Added for logging
+            console.log('Loaded saved checklist items:', savedItems); // Added for logging
 
             // Iterate through the acts in the JSON data
             data.acts.forEach((act) => {
@@ -30,18 +25,6 @@ function renderChecklist() {
                 // Create a div to contain the area lists
                 const areasListDiv = document.createElement('div');
                 areasListDiv.classList.add('area-lists');
-                areasListDiv.style.display = 'none'; // Initially hide the area lists
-
-                actHeader.addEventListener('click', () => {
-                    // Toggle the visibility of the area lists when the act header is clicked
-                    if (areasListDiv.style.display === 'none') {
-                        areasListDiv.style.display = 'block';
-                    } else {
-                        areasListDiv.style.display = 'none';
-                    }
-                    saveExpandedState(); // Save the state when an act header is clicked
-                    log(`Expanded state: ${areasListDiv.style.display}`); // Added for logging
-                });
 
                 // Create a ul element to contain the area lists
                 const areasList = document.createElement('ul');
@@ -57,16 +40,6 @@ function renderChecklist() {
                     // Create a div to contain the checklist items
                     const checklistDiv = document.createElement('div');
                     checklistDiv.classList.add('area-checklist'); // Add a class for styling
-                    checklistDiv.style.display = 'none'; // Initially hide the checklist
-
-                    areaHeader.addEventListener('click', () => {
-                        // Toggle the checklist visibility when the area header is clicked
-                        if (checklistDiv.style.display === 'none') {
-                            checklistDiv.style.display = 'block';
-                        } else {
-                            checklistDiv.style.display = 'none';
-                        }
-                    });
 
                     areaItem.appendChild(areaHeader);
                     areaItem.appendChild(checklistDiv);
@@ -142,7 +115,7 @@ function renderChecklist() {
 }
 
 function saveChecklist() {
-    log('Saving checklist...'); // Added for logging
+    console.log('Saving checklist...'); // Added for logging
     const checklistItems = [...document.querySelectorAll('input[type="checkbox"]')].map((checkbox) => {
         const text = checkbox.nextElementSibling.textContent;
         const spoilerRevealed = checkbox.nextElementSibling.querySelector('.spoiler:not(.spoiler)') === null;
@@ -155,7 +128,7 @@ function saveChecklist() {
     });
 
     localStorage.setItem('checklistItems', JSON.stringify(checklistItems));
-    log('Checklist saved:', checklistItems); // Added for logging
+    console.log('Checklist saved:', checklistItems); // Added for logging
 }
 
 // Event listener for marking items as completed
@@ -174,25 +147,8 @@ checklistContainer.addEventListener('change', (event) => {
 
         // Save the updated checklist
         localStorage.setItem('checklistItems', JSON.stringify(storedItems));
-        log('Updated checklist:', storedItems); // Added for logging
+        console.log('Updated checklist:', storedItems); // Added for logging
     }
-});
-
-// Add event listeners to the area and act headers for collapsing/expanding
-const headers = document.querySelectorAll('.area-header, .act-header');
-headers.forEach((header) => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling; // Get the content associated with the header
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-        } else {
-            content.style.display = 'none';
-        }
-
-        // Save the expanded state when a header is clicked
-        saveExpandedState();
-        log(`Expanded state: ${content.style.display}`); // Added for logging
-    });
 });
 
 // Event listener for the "Save Checklist" button
@@ -216,64 +172,7 @@ clearButton.addEventListener('click', () => {
     }
 });
 
-// Function to save the expanded/collapsed state
-function saveExpandedState() {
-    log('Saving expanded state...'); // Added for logging
-    const expandedState = {};
-
-    // Select all act headers
-    const actHeaders = document.querySelectorAll('.act-header');
-
-    // Iterate through each act header
-    actHeaders.forEach((actHeader) => {
-        // Get the act name from the data attribute
-        const actName = actHeader.dataset.act;
-
-        // Check if the area list is expanded or collapsed
-        const isExpanded = actHeader.nextElementSibling.style.display === 'block';
-
-        // Save the state in the expandedState object
-        expandedState[actName] = isExpanded;
-    });
-
-    // Save the expandedState object to localStorage
-    localStorage.setItem('expandedState', JSON.stringify(expandedState));
-    log('Saved expanded state:', expandedState); // Added for logging
-}
-
-// Function to load the expanded/collapsed state
-function loadExpandedState() {
-    log('Loading expanded state...'); // Added for logging
-    // Retrieve the expandedState object from localStorage
-    const expandedState = JSON.parse(localStorage.getItem('expandedState'));
-    log('Loaded expanded state:', expandedState); // Added for logging
-
-    if (expandedState) {
-        // Iterate through the saved state and apply it to act headers
-        const actHeaders = document.querySelectorAll('.act-header');
-        actHeaders.forEach((actHeader) => {
-            // Get the act name from the data attribute
-            const actName = actHeader.dataset.act;
-
-            // Check if the actName exists in the saved state
-            if (expandedState.hasOwnProperty(actName)) {
-                // Expand or collapse the area list based on the saved state
-                actHeader.nextElementSibling.style.display = expandedState[actName] ? 'block' : 'none';
-            }
-        });
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-    const act1Header = document.querySelector('.act-header[data-act="Act 1"]');
-    if (act1Header) {
-        act1Header.nextElementSibling.style.display = 'block';
-    }
-
     // Call renderChecklist to load and render the checklist
     renderChecklist();
-
-    // Call loadExpandedState when the page loads to restore the state
-    loadExpandedState();
 });
-
