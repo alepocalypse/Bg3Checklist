@@ -116,8 +116,7 @@ a:hover {
 /* Style the area-checklist to appear as columns */
 .area-checklist {
     list-style-type: none;
-    display: flex; /* Display checklist items as flexbox */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    display: block; /* Display checklist items as flexbox */
 }
 
 /* Style the area-checklist items within columns */
