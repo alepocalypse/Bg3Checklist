@@ -124,17 +124,20 @@
                         { "text": "Find the Runepowder Gnome, past the hidden kitchen area.", "completed": false },
                         { "text": "Find the Adamantine Forge and two pieces of Mithril Ore. Then defeat Grym", "completed": false },
                         { "text": "Help the cursed monk", "completed": false },
-                        { "text": "Eliminate Nere", "completed": false }
+                        { "text": "Eliminate Nere", "completed": false },
+                        { "text": "Taking the lift down to Shadow-Cursed Lands ends Act 1, be sure you are done questing as some NPCs move", "completed": false, "warning": true },
                     ]
                 },
                 {
                     "name": "Mountain Pass",
                     "header": "Mountain Pass",
                     "checklist": [
-                        { "text": "Speak with Elminster at the entrance to the Shadow-Cursed Lands and then promptly turn around", "completed": false },
+                        { "text": "Speak with Elminster outside the entrance to the Shadow-Cursed Lands", "completed": false },
+                        { "text": "Going into Shadow-Cursed Lands ends Act 1, be sure you are done questing as some NPCs move", "completed": false, "warning": true },
                         { "text": "Complete the Githyanki Creche", "completed": false },
                         { "text": "Deal with the merchant woman who wants an egg", "completed": false },
-                        { "text": "Find the Blood of Lathander", "completed": false }
+                        { "text": "Find the Blood of Lathander", "completed": false },
+                        
                     ]
                 }
             ]
@@ -175,26 +178,23 @@
                     "header": "Reithwin",
                     "checklist": [
                         { "text": "Investigate the central pillar", "completed": false },
-                        { "text": "At the graveyard entrance, you will find Arabella", "completed": false }
+                        { "text": "Talk to Arabella", "completed": false }
                     ]
                 },
                 {
                     "name": "Mason Guild",
                     "header": "Mason Guild",
                     "checklist": [
-                        { "text": "At the entrance, you will meet an NPC then they go poof after a while (Act 3 foreshadowing)", "completed": false },
-                        { "text": "Selunite Resistance stuff", "completed": false },
-                        { "text": "Bring someone with high Perception", "completed": false },
-                        { "text": "Didn’t encounter very amazing loot here other than the infernal iron but do check it out nonetheless. (Let me know if I missed any good loot myself)", "completed": false }
+                        { "text": "Did you spot that NPC? Weird right?", "completed": false },
+                        { "text": "Resistance stuff", "completed": false }
                     ]
                 },
                 {
                     "name": "Tollhouse",
                     "header": "Tollhouse",
                     "checklist": [
-                        { "text": "Lots of littered gold on the ground", "completed": false },
-                        { "text": "Speak to the Thorm made of gold (has lots of gold)", "completed": false },
-                        { "text": "Explore rooms that are barricaded off", "completed": false },
+                        { "text": "Deal with gold guy", "completed": false },
+                        { "text": "Get around the barricades", "completed": false },
                         { "text": "Unlock the safes", "completed": false }
                     ]
                 },
@@ -202,51 +202,50 @@
                     "name": "House of Healing",
                     "header": "House of Healing",
                     "checklist": [
-                        { "text": "You will find Arabella’s parents, bring someone with Speak with Dead", "completed": false },
-                        { "text": "Speak to Dr. Thorm", "completed": false },
+                        { "text": "Speak with the two tiefling's spirits", "completed": false },
+                        { "text": "Deal with Dr. Thorm", "completed": false },
                         { "text": "Explore the library at the top floor", "completed": false },
-                        { "text": "Check out the morgue (I completely missed this, might check it on in my next playthrough)", "completed": false }
+                        { "text": "Check out the morgue", "completed": false }
                     ]
                 },
                 {
                     "name": "The Waning Moon",
                     "header": "The Waning Moon",
                     "checklist": [
-                        { "text": "Grab Madeline’s ledger for He-Who-Was", "completed": false },
-                        { "text": "Speak to the bartender", "completed": false },
-                        { "text": "After dealing with the bartender, head to the backroom, read the recipes and you will find a hidden potion stash in town marked on your map", "completed": false }
+                        { "text": "Grab the ledger for He-Who-Was", "completed": false },
+                        { "text": "Deal with the bartender", "completed": false }
                     ]
                 },
                 {
                     "name": "Moonrise Tower",
                     "header": "Moonrise Tower",
                     "checklist": [
-                        { "text": "Speak with the gnolls and the chef in the kitchen (be good to the gnolls and you won't regret it later)", "completed": false },
-                        { "text": "Interact with the ogre on the ground floor for something interesting", "completed": false },
-                        { "text": "Speak with the weapons & armor merchant (I forgot his name), do bring Karlach with you for some interesting dialogue", "completed": false },
-                        { "text": "Save the prisoners in the basement (Save the gnomes, Save the tieflings, Be sure to speak with Rolan, Alfira, and Bex to fully complete the quest. In case you are wondering, you will not find Zevlor, Mol, and the Grand Duke here)", "completed": false },
-                        { "text": "Balthazar’s room (Be sure to read the books and notes, Solve the protruding books puzzle, Grab the moon lantern if you still need it. You may also want to bring Gale for this)", "completed": false },
-                        { "text": "Ketheric’s room (Some important letters and notes that foreshadow Act 3)", "completed": false },
-                        { "text": "Ketheric’s daughter’s room (Isobel's room) (You can try to face Ketheric but there are multiple points within the game where it will tell you he's invulnerable so you need to first find out its source.)", "completed": false }
+                        { "text": "Be nice to the kitchen staff", "completed": false },
+                        { "text": "Interact with the ogre on the ground floor", "completed": false },
+                        { "text": "Speak with the weapons & armor merchant", "completed": false },
+                        { "text": "Save and talk to all the prisoners in the basement", "completed": false },
+                        { "text": "Balthazar’s room. Book puzzle and might need a wizard.", "completed": false },
+                        { "text": "Ketheric’s room", "completed": false },
+                        { "text": "Ketheric’s daughter’s room.", "completed": false }
                     ]
                 },
                 {
                     "name": "Grand Mausoleum",
                     "header": "Grand Mausoleum",
                     "checklist": [
-                        { "text": "You will meet Raphael before entering this place", "completed": false },
-                        { "text": "Read all the books/notes/plaques you can find in the first part of the mausoleum (Bring someone with high Religion for some interesting trivia)", "completed": false }
+                        { "text": "Talk to the devil you know", "completed": false }
                     ]
                 },
                 {
                     "name": "Gauntlet of Shar",
                     "header": "Gauntlet of Shar",
                     "checklist": [
-                        { "text": "You will find Balthazar on the west wing, he gives you something to summon ‘Flesh’", "completed": false },
-                        { "text": "You will find Raphael’s old enemy on the east wing", "completed": false },
+                        { "text": "Meet Balth and his brother", "completed": false },
+                        { "text": "Ralph's old friend dealt with", "completed": false },
                         { "text": "Complete all 3 trials", "completed": false },
-                        { "text": "Explore the library, read the books, solve the puzzle, you will get: Dark Justiciar’s helm (very rare), Dark Justiciar’s armor (rare)", "completed": false },
-                        { "text": "Explore the bottom of the huge Shar's statue, read everything and speak to the rat", "completed": false }
+                        { "text": "Explore the library, read the books, solve the puzzle", "completed": false },
+                        { "text": "Speak to the rat at the bottom of the statue", "completed": false },
+                        { "text": "The portal to Nightsong is the end of Act2 and wildly cuts you off from Act1 + 2's content. Be sure you are ready to move on", "completed": false, "warning": true },
                     ]
                 }
             ]
