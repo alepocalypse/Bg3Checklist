@@ -149,34 +149,32 @@
                     "header": "Shadow Cursed Lands",
                     "checklist": [
                         { "text": "Meet He-Who-Was", "completed": false },
-                        { "text": "Play hide and seek with Oliver in the ‘House with Flowers'", "completed": false },
-                        { "text": "Discover 3 ruins in the area with hidden shadow people (Southeast of He-Who-Was, Northwest of House with Flowers, Southeast of Shadowed Battlefield waypoint)", "completed": false },
-                        { "text": "Explore the abandoned potter’s workshop (relates to Selunite Resistance)", "completed": false }
+                        { "text": "Play a game in the ‘House with Flowers'", "completed": false },
+                        { "text": "Explore the abandoned potter’s workshop", "completed": false }
                     ]
                 },
                 {
                     "name": "Last Light Inn",
                     "header": "Last Light Inn",
                     "checklist": [
-                        { "text": "Meet Dammon again (Give him infernal iron for some gear, Give him the Devilfoil Masks you found from Grymforge to make some bombs)", "completed": false },
-                        { "text": "Meet Strange Ox from the Emerald Grove again", "completed": false },
-                        { "text": "Bear statue at inn’s entrance, interesting trivia", "completed": false },
-                        { "text": "Convince Mattis to give you a tower-shaped key (this is for the Mason's Guild)", "completed": false },
+                        { "text": "Meet Dammon again", "completed": false },
+                        { "text": "That darn ox again", "completed": false },
+                        { "text": "Get a key from Mattis", "completed": false },
                         { "text": "Speak to Jaheira again", "completed": false },
                         { "text": "Speak to Alfira", "completed": false },
-                        { "text": "Speak to Rolan (You will find him later wandering in the area between Reithwin and Moonrise Tower trying to be a hero)", "completed": false },
-                        { "text": "Speak to the cat in the inn for some dialogue", "completed": false },
-                        { "text": "Raphael will be playing chess with Mol on your left from the inn’s entrance (Be sure to speak with Mol afterwards)", "completed": false },
-                        { "text": "Enter one of the rooms in the bottom floor where there is a bedridden Flaming Fist (Art Cullagh) (After speaking with Art, I personally recommend you to travel to House of Healing first to help Art before speaking to Isobel or else you risk him dying to the upcoming fight triggered by speaking to Isobel. I did not have Halsin with me, so I spoke to him in my camp after this)", "completed": false },
-                        { "text": "Access the inn’s cellar from the outside, discover a hidden area that belonged to the Selunite resistance", "completed": false },
-                        { "text": "Exit the inn and some Harpers will approach you to ambush a cult convoy together to get something really useful (a pixie bell that gives your entire party immunity to the weak and strong shadow curse).", "completed": false }
+                        { "text": "Speak to Rolan", "completed": false },
+                        { "text": "Speak to the cat", "completed": false },
+                        { "text": "Interupt Mol's chess game", "completed": false },
+                        { "text": "Bottom floor, find Art. Do his stuff in House of Healing before talking to Isobel", "completed": false },
+                        { "text": "Find a way into the cellar", "completed": false },
+                        { "text": "Ambush a caravan", "completed": false }
                     ]
                 },
                 {
                     "name": "Reithwin",
                     "header": "Reithwin",
                     "checklist": [
-                        { "text": "The central pillar of the town has an interesting secret: it unlocks Shar's Sanctuary", "completed": false },
+                        { "text": "Investigate the central pillar", "completed": false },
                         { "text": "At the graveyard entrance, you will find Arabella", "completed": false }
                     ]
                 },
