@@ -106,14 +106,14 @@
                         { "text": "Spectate a stoned drow", "completed": false },
                         { "text": "Festering Cove", "completed": false },
                         { "text": "Obtain the Sergeant’s boots, a gnome stole them.", "completed": false },
-                        { "text": "Complete the Mushroom People", "completed": false },
-                        { "text": "Help Gut with the Duergar, is shes still kicking", "completed": false },
+                        { "text": "Complete the Mushroom People colony", "completed": false },
+                        { "text": "Help Gut with the Duergar, if she is still around", "completed": false },
                         { "text": "Gnome in colony needs help", "completed": false },
                         { "text": "Rescue a dumb dwarf", "completed": false },
-                        { "text": "A very rare item in the boom mushrooms try and save it", "completed": false },
+                        { "text": "A very rare item in the boom mushrooms try and save it, give it to dumb dwarf, Shadowheart, or Durge", "completed": false },
                         { "text": "Meet Omellum in the Myconid Colony", "completed": false },
                         { "text": "Find Sussur Bark then head back to the Blacksmith Shop in Blighted Village", "completed": false },
-                        { "text": "Find Icy Metal Icy Heave, and Icy Crystal", "completed": false }
+                        { "text": "Find Icy Metal, Icy Heave, and Icy Crystal", "completed": false, "url": "https://bg3.wiki/wiki/Mourning_Frost"}
                     ]
                 },
                 {
@@ -201,7 +201,7 @@
                     "name": "House of Healing",
                     "header": "House of Healing",
                     "checklist": [
-                        { "text": "Speak with the two tiefling's spirits", "completed": false },
+                        { "text": "Speak with dead on two tieflings", "completed": false },
                         { "text": "Deal with Dr. Thorm", "completed": false },
                         { "text": "Explore the library at the top floor", "completed": false },
                         { "text": "Check out the morgue", "completed": false }
@@ -223,7 +223,7 @@
                         { "text": "Interact with the ogre on the ground floor", "completed": false },
                         { "text": "Speak with the weapons & armor merchant", "completed": false },
                         { "text": "Save and talk to all the prisoners in the basement", "completed": false },
-                        { "text": "Balthazar’s room. Book puzzle and might need a wizard.", "completed": false },
+                        { "text": "Balthazar’s room. Book puzzle and bring Gale.", "completed": false },
                         { "text": "Ketheric’s room", "completed": false },
                         { "text": "Ketheric’s daughter’s room.", "completed": false }
                     ]
