@@ -13,10 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderItemTable() {
   const itemTableContainer = document.getElementById('itemTableContainer');
   const savedItems = JSON.parse(localStorage.getItem('itemTableItems')) || [];
+  
+  // Create the table header
+  let tableHTML = `
+    <thead>
+      <tr>
+        <th>Check</th>
+        <th class="sortable">Name</th>
+        <th class="sortable">Type</th>
+        <th class="sortable">Rarity</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th><input type="text" id="filter-name"></th>
+        <th><input type="text" id="filter-type"></th>
+        <th><input type="text" id="filter-rarity"></th>
+      </tr>
+    </thead>
+    <tbody>
+  `;
+  
   fetch('itemsData.json')
     .then(response => response.json())
     .then(data => {
-      let tableHTML = "<thead><tr><th>Check</th><th>Name</th><th>Type</th><th>Rarity</th></tr></thead><tbody>";
       data.forEach((item, index) => {
         const savedItem = savedItems.find((saved) => saved.name === item.name);
         const isChecked = savedItem ? savedItem.checked : false;
