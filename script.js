@@ -90,6 +90,9 @@ function createChecklistItem(item, savedItems) {
     const textSpan = document.createElement('span');
     textSpan.innerHTML = item.text;
 
+    // Handle warnings
+    handleWarnings(textSpan, item.warning);
+
     if (item.url) {
         // Create a clickable Font Awesome icon
         const icon = document.createElement('i');
@@ -135,6 +138,11 @@ function createChecklistItem(item, savedItems) {
     return checklistItem;
 }
 
+function handleWarnings(element, isWarning) {
+    if (isWarning) {
+        element.style.color = "red";
+    }
+}
 
 function saveChecklist() {
     console.log('Saving checklist...'); // Added for logging
