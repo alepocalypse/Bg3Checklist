@@ -108,3 +108,7 @@ footer {
         margin-bottom: 10px; /* Adjust spacing between stacked "Act" headings */
     }
 }
+
+.hidden {
+    display: none;
+}
