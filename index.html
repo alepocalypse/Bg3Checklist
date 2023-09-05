@@ -13,15 +13,26 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="container">
         <h1>Baldur's Gate 3 Checklist</h1>
-        <ul id="checklist">
-    
-        </ul>
-        <button id="saveButton">Save Checklist</button>
-        <button id="clearButton">Clear Local Data</button>
+        <button id="toggleView">Toggle View</button>
+
+        <!-- Checklist Container -->
+        <div id="checklistContainer">
+            <ul id="checklist"></ul>
+            <button id="saveButton">Save Checklist</button>
+            <button id="clearButton">Clear Local Data</button>
+        </div>
+
+        <!-- Item Table Container -->
+        <div id="itemTableContainer" class="hidden">
+            <table id="itemTable">
+                <!-- Table header and body will be populated by JavaScript -->
+            </table>
+        </div>
     </div>
+
     <script type="module" src="script.js"></script>
-</body>
-    
+    <script type="module" src="itemTable.js"></script>
+</body>    
 <footer>
 <div class="footer-info">
         <p><em>Credit for initial list to /u/Fishburger77 from their checklists for <a href="https://www.reddit.com/r/BaldursGate3/comments/15o0ye9/spoilers_checklist_of_things_to_do_before_leaving/"> Act 1 </a> and <a href="https://www.reddit.com/r/BaldursGate3/comments/15ugt7v/spoilers_checklist_of_things_to_do_before_leaving/"> Act 2 </a>
