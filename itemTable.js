@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+ocument.addEventListener('DOMContentLoaded', () => {
   // Initialize or load item table state
   renderItemTable();
 
@@ -8,12 +8,36 @@ document.addEventListener('DOMContentLoaded', () => {
       saveItemTable();
     }
   });
+
+  // Add sort listener to sortable columns
+  document.querySelectorAll('.sortable').forEach(header => {
+    header.addEventListener('click', handleSort);
+  });
+
+  // Add filter listeners to filter inputs
+  document.querySelectorAll('#itemTable thead input[type="text"]').forEach(input => {
+    input.addEventListener('input', handleFilter);
+  });
 });
+
+let currentSort = { column: null, ascending: true };
+
+function handleSort(event) {
+  const column = event.target.textContent.toLowerCase();
+  currentSort.ascending = currentSort.column === column ? !currentSort.ascending : true;
+  currentSort.column = column;
+
+  renderItemTable();
+}
+
+function handleFilter() {
+  renderItemTable();
+}
 
 function renderItemTable() {
   const itemTableContainer = document.getElementById('itemTableContainer');
   const savedItems = JSON.parse(localStorage.getItem('itemTableItems')) || [];
-  
+
   // Create the table header
   let tableHTML = `
     <thead>
@@ -32,12 +56,33 @@ function renderItemTable() {
     </thead>
     <tbody>
   `;
-  
+
   fetch('itemsData.json')
     .then(response => response.json())
     .then(data => {
-      data.forEach((item, index) => {
-        const savedItem = savedItems.find((saved) => saved.name === item.name);
+      // Sort based on current column and direction
+      if (currentSort.column) {
+        data.sort((a, b) => {
+          const valA = a[currentSort.column];
+          const valB = b[currentSort.column];
+          return currentSort.ascending ? (valA < valB ? -1 : 1) : (valA > valB ? -1 : 1);
+        });
+      }
+
+      // Filtering
+      const filterName = document.getElementById('filter-name')?.value.toLowerCase() || '';
+      const filterType = document.getElementById('filter-type')?.value.toLowerCase() || '';
+      const filterRarity = document.getElementById('filter-rarity')?.value.toLowerCase() || '';
+
+      const filteredData = data.filter(item =>
+        item.name.toLowerCase().includes(filterName) &&
+        item.type.toLowerCase().includes(filterType) &&
+        item.rarity.toLowerCase().includes(filterRarity)
+      );
+
+      // Populate the table
+      filteredData.forEach((item, index) => {
+        const savedItem = savedItems.find(saved => saved.name === item.name);
         const isChecked = savedItem ? savedItem.checked : false;
         tableHTML += `
           <tr>
@@ -48,7 +93,11 @@ function renderItemTable() {
           </tr>
         `;
       });
-      tableHTML += "</tbody>";
+
+      // Close the table body
+      tableHTML += '</tbody>';
+
+      // Update the table's HTML
       document.getElementById('itemTable').innerHTML = tableHTML;
     });
 }
