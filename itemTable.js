@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize or load item table state
   renderItemTable();
+});
 
+function attachEventListeners() {
   // Add change listener to checkboxes
   document.getElementById('itemTable').addEventListener('change', (event) => {
     if (event.target.type === 'checkbox') {
@@ -14,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     header.addEventListener('click', handleSort);
   });
 
-  // Add filter listeners to filter inputs
-  document.querySelectorAll('#itemTable thead input[type="text"]').forEach(input => {
+  // Add filter listeners to filter inputs and selects
+  document.querySelectorAll('#itemTable thead input[type="text"], #itemTable thead select').forEach(input => {
     input.addEventListener('input', handleFilter);
   });
-});
+}
 
 let currentSort = { column: null, ascending: true };
 
@@ -26,7 +28,6 @@ function handleSort(event) {
   const column = event.target.textContent.toLowerCase();
   currentSort.ascending = currentSort.column === column ? !currentSort.ascending : true;
   currentSort.column = column;
-
   renderItemTable();
 }
 
@@ -35,32 +36,34 @@ function handleFilter() {
 }
 
 function renderItemTable() {
-  const itemTableContainer = document.getElementById('itemTableContainer');
   const savedItems = JSON.parse(localStorage.getItem('itemTableItems')) || [];
-
-  // Create the table header
-  let tableHTML = `
-    <thead>
-      <tr>
-        <th>Check</th>
-        <th class="sortable">Name</th>
-        <th class="sortable">Type</th>
-        <th class="sortable">Rarity</th>
-      </tr>
-      <tr>
-        <th></th>
-        <th><input type="text" id="filter-name"></th>
-        <th><input type="text" id="filter-type"></th>
-        <th><input type="text" id="filter-rarity"></th>
-      </tr>
-    </thead>
-    <tbody>
-  `;
 
   fetch('itemsData.json')
     .then(response => response.json())
     .then(data => {
-      // Sort based on current column and direction
+      const distinctTypes = Array.from(new Set(data.map(item => item.type)));
+      const distinctRarities = Array.from(new Set(data.map(item => item.rarity)));
+      const typeOptions = distinctTypes.map(type => `<option value="${type}">${type}</option>`).join('');
+      const rarityOptions = distinctRarities.map(rarity => `<option value="${rarity}">${rarity}</option>`).join('');
+
+      let tableHTML = `
+        <thead>
+          <tr>
+            <th>Check</th>
+            <th class="sortable">Name</th>
+            <th class="sortable">Type</th>
+            <th class="sortable">Rarity</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th><input type="text" id="filter-name"></th>
+            <th><select id="filter-type" multiple>${typeOptions}</select></th>
+            <th><select id="filter-rarity" multiple>${rarityOptions}</select></th>
+          </tr>
+        </thead>
+        <tbody>
+      `;
+
       if (currentSort.column) {
         data.sort((a, b) => {
           const valA = a[currentSort.column];
@@ -69,18 +72,16 @@ function renderItemTable() {
         });
       }
 
-      // Filtering
       const filterName = document.getElementById('filter-name')?.value.toLowerCase() || '';
-      const filterType = document.getElementById('filter-type')?.value.toLowerCase() || '';
-      const filterRarity = document.getElementById('filter-rarity')?.value.toLowerCase() || '';
+      const filterType = document.getElementById('filter-type')?.value || '';
+      const filterRarity = document.getElementById('filter-rarity')?.value || '';
 
-      const filteredData = data.filter(item =>
-        item.name.toLowerCase().includes(filterName) &&
-        item.type.toLowerCase().includes(filterType) &&
-        item.rarity.toLowerCase().includes(filterRarity)
-      );
+      const filteredData = data.filter(item => {
+        return item.name.toLowerCase().includes(filterName) &&
+               (filterType ? filterType.includes(item.type) : true) &&
+               (filterRarity ? filterRarity.includes(item.rarity) : true);
+      });
 
-      // Populate the table
       filteredData.forEach((item, index) => {
         const savedItem = savedItems.find(saved => saved.name === item.name);
         const isChecked = savedItem ? savedItem.checked : false;
@@ -94,11 +95,11 @@ function renderItemTable() {
         `;
       });
 
-      // Close the table body
       tableHTML += '</tbody>';
-
-      // Update the table's HTML
       document.getElementById('itemTable').innerHTML = tableHTML;
+
+      // Re-attach event listeners
+      attachEventListeners();
     });
 }
 
@@ -111,5 +112,6 @@ function saveItemTable() {
       checked: checkbox.checked,
     };
   });
+
   localStorage.setItem('itemTableItems', JSON.stringify(savedItems));
 }
