@@ -1,0 +1,338 @@
+Name,Type,Properties,Location,Description
+Aberration Hunters' Amulet,Amulet,,Crèche Y'llek,"Advantage on Intelligence Saving Throws if you are Githyanki. 
+Advantage on Attack Rolls against aberrations and aberrations have Disadvantage on Attack Rolls against you."
+Absolute's Talisman,Amulet,,Goblin Camp,"Advantage on Death Saving Throws if you bear the Absolute's Brand
+Cast Aid once per Long Rest. This casting of Aid only affects the caster."
+Absolute's Warboard,Shield,🛡️ + 2 AC,Goblin Camp,"Gain a +1 bonus to Saving Throws if you bear the Absolute's Brand.
+Cast Heroism once per Long Rest."
+Abyss Beckoners,Gloves,,Zhentarim Hideout,"Your summoned creatures have resistance to all damage except Psychic.
+At the start of your summoned creature's turn, it must succed a Wisdom Saving Throw or be driven Mad."
+Adamantine Longsword,Longsword,"1h 🔪(1d8)
+2h 🔪(1d10)",The Adamantine Forge,"This weapon ignores Resistance to Slashing damage.
+If you hit an object with this weapon, the hit is always Critical."
+Adamantine Mace,Mace,1h 🔨(1d6),The Adamantine Forge,"This weapon ignores Resistance to Bludgeoning damage. 
+If you hit an object with this weapon, the hit is always Critical."
+Adamantine Scale Mail,Medium Armour,🛡️ 16 AC,The Adamantine Forge,"Reduce all incoming damage by 1.
+When a creature hits you with a melee attack, you send it Reeling for 2 turns.
+Attackers can't land Critical Hits on you."
+Adamantine Scimitar,Scimitar,1h 🔪(1d6),The Adamantine Forge,"This weapon ignores Resistance to Slashing damage.
+If you hit an object with this weapon, the hit is always Critical."
+Adamantine Shield,Shield,🛡️ + 2 AC,The Adamantine Forge,"When a creature misses a melee attack against you, you send it Reeling for 2 turns.
+When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.
+Attackers can't land Critical Hits on you."
+Adamantine Splint Armour,Heavy Armour,🛡️ 18 AC,The Adamantine Forge,"Reduce all incoming damage by 2.
+When a creature hits you with a melee attack, you send it Reeling for 3 turns.
+Attackers can't land Critical Hits on you."
+Amulet of Branding,Amulet,,Crèche Y'llek,Cast Brand the Weak once per Long Rest.
+Amulet of Elemental Torment,Amulet,,Goblin Camp,"When you stand on certain surfaces and cast a spell that deals damage, the target also suffers the surface's effects."
+Amulet of Misty Step,Amulet,,Goblin Camp,Cast Misty Step once per Short Rest.
+Amulet of Restoration,Amulet,,Myconid Colony,"Cast Healing Word once per Long Rest.
+Cast Mass Healing Word once per Long Rest."
+Amulet of Selûne's Chosen,Amulet,,Shattered Sanctum,"Cast Selûne's Dream once per Long Rest. An ally you touch regains ❤️(1d8 + Spellcasting Modifier) Hit Points, but possibly falls Asleep. "
+Amulet of Silvanus,Amulet,,Druid Grove,Cast Lesser Restoration once per Long Rest.
+Amulet of the Unworthy,Amulet,,Underdark,"Resistance to Slashing damage
+Vulnerability to Bludgeoning damage"
+Armour of Uninhibited Kushigo,Clothing,🛡️ 10 AC,Grymforge,"While Patient Defence is active, you can use your Reaction to make an unarmed strike againts any attacker that misses."
+Assassin's Touch,Dagger,1h 🏹(1d4 + 1),Goblin Camp,Deals an additional 💀(1d4) to creatures that are Knocked Out or Sleeping.
+Beastmaster's Chain,Amulet,,Shattered Sanctum,Cast Animal Friendship once per Long Rest.
+Blazer of Benevolence,Light Armour,🛡️ 11 AC,Goblin Camp,Gain ❤️(4) Temporary Hit Points when you inspire an ally using Bardic Inspiration.
+Blooded Greataxe,Greataxe,2h 🔪(1d12),Goblin Camp,Deal an additional 🔪(1d4) while you're at 50% Hit Points or less.
+Bloodguzzler Garb,Clothing,🛡️ 10 AC,Underdark,Gain Wrath for 1 turn whenever you are hit.
+Boots of Aid and Comfort,Boots,,Goblin Camp,"When you heal a creature, they gain an additional ❤️(3) Temporary Hit Points."
+Boots of Elemental Momentum,Medium Boots,,Rosymorn Monastery Trail,"When you deal Acid, Cold, Fire, Lightning or Thunder damage with Spells or Cantrips, gain Momentum for 2 turns.
+Athletics +1"
+Boots of Genial Striding,Boots,,Myconid Colony,Your Movement Speed is unimpeded by Difficult Terrain.
+Boots of Speed,Boots,,Myconid Colony,Cast Click Heels
+Boots of Stormy Clamour,Boots,,Myconid Colony,"When you inflict a condition on a creature, you also inflict Reverberation for 2 turns."
+Boots of Striding,Medium Boots,,Goblin Camp,"When you cast a spell that requires Concentration, you gain Momentum for 2 turns. 
+While you are concentrating, you cannot be pushed or get knocked Prone.
+Athletics +1"
+Bow of Awareness,Shortbow,2h 🏹(1d6 + 1),Shattered Sanctum,Gain a +1 bonus to Initiative Rolls.
+Bow of the Banshee,Shortbow,2h 🏹(1d6 + 1),Grymforge,"Gain 🎲(1d4) bonus to attack and damage rolls against Frightened creatures.
+When you a hit with this weapon, possibly inflict Frightened."
+Bracers of Defence,Gloves,,Blighted Village,Gain a 🛡️ + 2 AC when not wearing armour or holding a shield.
+Bracing Band,Ring,,Grymforge,Gain 🛡️ + 1 AC until your next turn after shoving an enemy.
+Broodmother's Revenge,Amulet,,Druid Grove,"When you are healed, your weapon deals an additional 🐍(1d4) for 3 turns."
+Browbeaten Circlet,Helmet,,Sunlit Wetlands,Gain a +1 bonus to Spell Save DC while Threatened.
+Cacophony,Quarterstaff,"1h 🔨(1d6 + 1) + ⛈️(1d4)
+2h 🔨(1d8 + 1) + ⛈️(1d4)",Rosymorn Monastery Trail,Cast Thunderous Smite once per Short Rest
+Callous Glow Ring,Ring,,Gauntlet of Shar,Deal an additional ☀️(2) against creatures that are illuminated.
+Cap of Curing,Helmet,,Druid Grove,"When you inspire an ally using Bardic Inspiration, they regain ❤️(1d6) Hit Points."
+Cap of Wrath,Helmet,,Grymforge,"If you start your turn with 50% Hit Points or less, gain Wrath for 2 turn."
+Caustic Band,Ring,,Myconid Colony,Deal an additional ⚗️(2) with weapon attacks.
+Ceremonial Battleaxe,Battleaxe,"1h 🔪(1d8 + 1)
+2h 🔪(1d10 + 1)",Rosymorn Monastery,SPOILER IN NOTE
+Ceremonial Mace,Mace,1h 🔨(1d6 + 1),Rosymorn Monastery,SPOILER IN NOTE
+Ceremonial Warhammer,Warhammer,"1h 🔨(1d8 + 1)
+2h 🔨(1d10 + 1)",Rosymorn Monastery,SPOILER IN NOTE
+Chain of Liberation,Medium Armour,🛡️ 13 AC,Selûnite Outpost,"You can reduce the duration of your Momentum by 1 turn to Sprint once per turn, rushing forward in a straight 6m / 20ft line that doesn't provoke Opportunity Attacks."
+Champion's Chain,Amulet,,Myconid Colony,Grant an ally a +2 bonus to Intimidation once per Long Rest.
+Cinder Shoes,Boots,,Myconid Colony,"When you Burn an enemy, gain Heat for 2 turns."
+Circlet of Blasting,Helmet,,Myconid Colony,Cast Scorching Ray once per Long Rest.
+Circlet of Psionic Revenge,Helmet,,Crèche Y'llek,"When you succed a Saving Throw, the enemy that caused the throw takes 👁️(1d4).
+Gain a +1 bonus to Intelligence, Wisdom, and Charisma Saving Throws if you are Githyanki."
+Club of Hill Giant Strength,Club,1h 🔨(1d4),Arcane Tower,Increase Strength to 19.
+Corellon's Grace,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Druid Grove,"Gain a +1 bonus to Unarmed Attack Rolls and damage.
+Gain a +2 bonus to Saving Throws when not wearing armour."
+Corrosive Flail,Flail,1h 🔨(1d8 + 1),Underdark,Gain Corrosive Strike weapon action.
+Creation's Echo,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Myconid Colony,"When you deal Acid, Fire, Lightning, Radiant, or Necrotic damage, gain Resistance to that damage type for 2 turns."
+Crossbow of Arcane Force,Heavy Crossbow,2h 🏹(1d10 + 1),Crèche Y'llek,Gain Arcane Ammunition weapon action.
+Crusher's Ring,Ring,,Goblin Camp,Movement Speed increased by 3m / 10ft.
+Daredevil Gloves,Gloves,,Crèche Y'llek,"Gain a +1 bonus to Spell Attack Rolls.
+Your Ranged Spell Attacks can be made as melee spell attacks when you are adjacent to a hostile creature."
+Dark Justiciar Helm,Medium Helmet,,Grymforge,"Gain a +1 to Saving Throws when attacked while Obscured by shadow.
+Constitution Saving Throws +1"
+Dark Justiciar Mail,Medium Armour,🛡️ 13 AC,Grymforge,Deal 💀(1d4) to attackers that hit you with a melee attack while you're obscured by shadow.
+Dark Justiciar Mask,Light Helmet,,Grymforge,Intimidation +1
+Deep Delver,War Pick,1h 🏹(1d8),Grymforge,"Inflicts Shattered on hit. When attacking a Shattered target, deal an additional 🏹(1d4)."
+Defender Flail,Flail,"1h 🔨(1d8 + 1)
+🛡️ + 1 AC",Crèche Y'llek,"Reduce incoming Bludgeoning, Piercing, and Slashing damage by 1."
+Diadem of Arcane Synergy,Helmet,,Crèche Y'llek,"When you inflict a condition, gain Arcane Synergy for 2 turns."
+Disintegrating Night Walkers,Boots,,Grymforge,"Immune to being Enwebbed, Entangled, or Ensnared and slipping on Grease or Ice.
+Cast Misty Step once per Short Rest."
+Doom Axe,Greataxe,2h 🔪(1d12),Druid Grove,Prevents target from regaining Hit Points. Undead creatures also get Disadvantage on Attack Rolls.
+Doom Hammer,Maul,2h 🔨(2d6),Goblin Camp,Prevents target from regaining Hit Points. Undead creatures also get Disadvantage on Attack Rolls.
+Dragon's Grasp,Handaxe,1h 🔪(1d6),Druid Grove,Deals an additional 🔪(1d4) to Burning targets.
+Enforcer Club,Club,1h 🔨(1d4 + 1),Unknown,This weapon deals only Non-Lethal Damage.
+Envoy's Amulet,Amulet,,Myconid Colony,Grant an ally a +2 bonus to Persuasion Checks once per Long Rest.
+Everburn Blade,Greatsword,2h 🔪(2d6) + 🔥(1d4),Nautiloid,
+Explorer's Ring,Ring,,Underdark,"Nature +1
+Survival +1"
+Exterminator's Axe,Greataxe,2h 🔪(1d12),Underdark,"Deals an additional 🔥(1d6) to Plants, Insects, and Small creatures."
+Faithbreaker,Warhammer,"1h 🔨(1d8 + 1)
+2h 🔨(1d10 + 1)",Shattered Sanctum,Gain Absolute Power weapon action.
+Featherlight Boots,Boots,,Myconid Colony,"When you have 50% Hit Points or less, your Movement Speed is increased by 3m / 10ft."
+Fetish of Callarduran Smoothhands,Ring,,Grymforge,Cast Invisibility once per Long Rest.
+Firestoker,Hand Crossbow,1h 🏹(1d6),Grymforge,Deals an additional 🏹(1d4) to Burning targets.
+Fleetfingers,Gloves,,Forest,"When you Dash or take a similar action, you can Jump without using a bonus action."
+Gandrel's Aspiration,Heavy Crossbow,2h 🏹(1d10 + 1),Sunlit Wetlands,Advantage against Monstrosity type enemies.
+Giantbreaker,Heavy Crossbow,2h 🏹(1d10),Zhentarim Hideout,"When you hit, inflict Reeling for 2 turns."
+Gloves of Archery,Gloves,,Goblin Camp,"Deal an additional 🎲(2) damage with ranged weapon attacks.
+Proficiency with Longbows and Shortbows."
+Gloves of Baneful Striking,Gloves,,Rosymorn Monastery Trail,"When you deal damage with a weapon attack, the target recieves a 🎲(1d4) penalty to its Saving Throw against your next spell."
+Gloves of Belligerent Skies,Gloves,,Crèche Y'llek,"When you deal Thunder, Lightning, or Radiant damage, inflict Reverberation for 2 turns."
+Gloves of Cinder and Sizzle,Gloves,,Rosymorn Monastery Trail,"Deal an additional 🔥(1d4) with your unarmed attacks.
+Cast Scorching Ray once per Long Rest."
+Gloves of Dexterity,Gloves,,Crèche Y'llek,"Increases Dexterity to 18.
+Attack +1"
+Gloves of Fire Resistance,Gloves,,Myconid Colony,Resistance to Fire damage while you're at 50% Hit Points or less.
+Gloves of Flint and Steel,Gloves,,Myconid Colony,"When you deal Fire damage, the target must succeed a Constitution Saving Throw or begin Burning."
+Gloves of Hail of Thorns,Gloves,,Zhentarim Hideout,Cast Hail of Thorns once per Short Rest
+Gloves of Heroism,Gloves,,The Risen Road,"When you use your Channel Oath spells, you gain Heroism.
+Strength Saving Throws +1"
+Gloves of Missile Snaring,Gloves,,Druid Grove,"As a Reaction, intercept ranged weapon attacks and reduce their damage by 🎲(1d10 + Dexterity Modifier)."
+Gloves of Power,Gloves,,Druid Grove,"When you deal damage with a melee attack and bear the Absolute's Brand, the target recieves a 🎲(1d4) penalty penalty to their Attack Rolls and Saving Throws.
+Sleight of Hand +1"
+Gloves of Succour,Medium Gloves,,Risen Road Toll House,"When you use Lay on Hands on a creature with 50% Hit Points or less, grant them Blade Ward for 2 turns.
+Strength Saving Throws +1"
+Gloves of the Growling Underdog,Gloves,,Shattered Sanctum,"Advantage on melee attack rolls while surrounded by 2 or more foes.
+Strength Saving Throws +1"
+Gloves of Thievery,Gloves,,Zhentarim Hideout,Advantage on Sleight of Hand Checks.
+Gloves of Uninhibited Kushigo,Gloves,,Myconid Colony,Deal an additional 🎲(1d4) with Throw Attacks and attacks made with Improvised Weapons.
+Glowing Shield,Shield,🛡️ + 2 AC,Goblin Camp,Gain ❤️(8) Temporary Hit Points when you're at 50% Hit Points or less once per Short Rest.
+Gold Wyrmling Staff,Quarterstaff,"1h 🔨(1d6 + 1) + 🔥(1d4)
+2h 🔨(1d8 + 1) + 🔥(1d4)",Shattered Sanctum,Cast Fire Bolt
+Grymskull Helm,Heavy Helmet,,The Adamantine Forge,"Attackers can't land Critical Hits on you.
+Resistance to Fire damage.
+Cast Hunter's Mark once per Long Rest."
+Guiding Light,Ring,,Arcane Tower,Cast Light
+Hamarhraft,Maul,2h 🔨(2d6),Waukeen's Rest,"When the wearer Jumps, they deal ⛈️(1d6) in a 3 m / 10 ft radius upon landing."
+Haste Helm,Light Helmet,,Blighted Village,"At the start of combat, gain Momentum for 3 turns."
+Hedge Wanderer Armour,Medium Armour,"🛡️ 13 AC
+",Grymforge,"Gain a +1 bonus to Dexterity Saving Throws and Dexterity Checks.
+Nature +1"
+Hellrider's Pride,Medium Gloves,,Druid Grove,"When you heal a creature, grant them Blade Ward for 2 turns.
+Strength Saving Throws +1"
+Helmet of Autonomy,Light Helmet,,The Festering Cove,Proficiency in Wisdom Saving Throws.
+Helmet of Smiting,Medium Helmet,,Selûnite Outpost,"Gain ❤️(Charisma modifier) Temporary Hit Points when you inflict a condition with one of your Smite spells.
+Constitution Saving Throws +1"
+Herbalist's Gloves,Gloves,,Myconid Colony,"If you heal a Poisoned creature, it is no longer Poisoned."
+Hoarfrost Boots,Boots,,Crèche Y'llek,You cannot fall Prone while traversing icy terrain.
+Holy Lance Helm,Medium Helmet,,Rosymorn Monastery,"When a creature misses an Attack Roll against you, they must succeed a Dexterity Saving Throw or take ☀️(1d4).
+Constitution Saving Throws +1"
+Hunter's Dagger,Dagger,1h 🏹(1d4 + 1),Shattered Sanctum,"On a hit, the target must succeed a Constitution Saving Throw or become Ruptured."
+Hunting Shortbow,Shortbow,2h 🏹(1d6 + 1),Druid Grove,"Advantage against Monstrosity type enemies.
+Cast Hunter's Mark once per Long Rest."
+Infernal Robe,Clothing,"🛡️ 10 AC
+🛡️ + 1 AC",Druid Grove,"Cast Fire Shield (Warm) once per Long Rest.
+Resistance to Fire damage."
+Intransigent Warhammer,Warhammer,"1h 🔨(1d8)
+2h 🔨(1d10)",Grymforge,Knocks nearby creatures Prone after killing a target or landing a Critical Hit.
+Jagged Spear,Spear,"1h 🏹(1d6)
+2h 🏹(1d8)",Shattered Sanctum,"On a hit, the target may receive Disadvantage on Constitution Saving Throws."
+Jorgoral's Greatsword,Greatsword,2h 🔪(2d6 + 1),Grymforge,Gain Colossal Onslaught weapon action.
+Key of the Ancients,Helmet,,Druid Grove,"While you stand in front of the stone door in Nettie's room in the Druid Grove, you can open a shortcut to the Underground Passage.
+Nature +1"
+Knife of the Undermountain King,Shortsword,1h 🏹(1d6 + 2),Crèche Y'llek,"When you roll 2 damage or less, reroll the dice.
+You have Advantage on Attack Rolls againts Lightly or Heavily Obscured targets when using this weapon.
+You land a Critical Hit when rolling a 19. "
+Komira's Locket,Amulet,,Druid Grove,Cast Dancing Lights
+Larethian's Wrath,Longsword,"1h 🔪(1d8 + 1)
+2h 🔪(1d10 + 1)",Crèche Y'llek,Gain Razor Gale weapon action.
+Light of Creation,Halberd,2h 🔪(1d10 + 1) + ⚡(1d6),Arcane Tower,"Chance to Stun the wielder, unless it is a Construct."
+Linebreaker Boots,Boots,,Shattered Sanctum,"When you Dash or take a similar action, gain Wrath for 2 turns."
+Loviatar's Scourge,Mace,1h 🔨(1d6) + 💀(1d6),Shattered Sanctum,"Deals an additional 💀(1d6) to nearby targets, including the wielder.
+Resistance to Necrotic damage."
+Luminous Armour,Medium Armour,🛡️ 15 AC,Selûnite Outpost,"When you deal Radiant damage, you cause a Radiant shockwavet that inflicts Radiating Orb in a 3 m / 10 ft radius to enemies for 1 turn."
+Mage's Friend,Ring,,Arcane Tower,"Arcana +1
+Religion +1"
+Mask of the Shapeshifter,Helmet,,Campsite,Cast Disguise Self
+Melf's First Staff,Quarterstaff,"1h 🔨(1d6 + 1)
+2h 🔨(1d8 + 1)",Myconid Colony,"Gain a +1 bonus to Spell Save DC and spell Attack Rolls.
+Cast Melf's Acid Arrow once per Long Rest."
+Merregon Halberd,Halberd,2h 🔪(1d10 + 1),Grymforge,
+Monster Slayer Glaive,Glaive,2h 🔪(1d10 + 1),Shattered Sanctum,"Deals an additional 🎲(1d4) damage against monstrosity type enemies.
+Jump distance is increased by 1.5m / 5ft."
+Moondrop Pendant,Amulet,,Owlbear Nest,You don't provoke Attacks of Opportunity while you're at 50% Hit Points or less.
+Mourning Frost,Quarterstaff,"1h 🔨(1d6 + 1) + ❄️(1d4)
+2h 🔨(1d8 + 1) + ❄️(1d4)",Underdark,"Deal an additional ❄️(1) when you deal any cold damage, and possibly inflict Chill.
+Cast Ray of Frost"
+Mystra's Grace,Boots,,Arcane Tower,Cast Feather Fall
+Nature's Snare,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Druid Grove,"On a hit, the target may become Ensnared if it is not a plant or beast."
+Necklace of Elemental Augmentation,Amulet,,Crèche Y'llek,"When you deal Acid, Cold, Fire, Lightning or Thunder damage with Cantrips, add your Spellcasting Modifier to the damage dealt."
+Pale Oak,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Druid Grove,"Immune to Ensnare by Druidic Vines.
+Cast Faithwarden's Vines once per Long Rest."
+Pearl of Power Amulet,Amulet,,Myconid Colony,"You can replenish expended Spell Slots of your choice once per Long Rest.
+Restores a single spell slot of 3rd level or lower."
+Periapt of Wound Closure,Amulet,,Rosymorn Monastery Trail,"When Downed, automatically stabilise at the start of the turn.
+When you regain Hit Points, heal for the maximum number."
+Phalar Aluve,Longsword,"1h 🔪(1d8 + 1)
+2h 🔪(1d10 + 1)",Underdark,"Cast Phalar Aluve: Shriek once per Short Rest.
+Cast Phalar Aluve: Sing once per Short Rest.
+Performance +1"
+Poisoner's Robe,Clothing,🛡️ 10 AC,Whispering Depths,Deal an additional 🐍(1d4) when casting a spell that deals Poison damage.
+Psychic Spark,Amulet,,Myconid Colony,"Magic Missile shoots an additional missile when cast.
+Cast Magic Missile once per Long Rest."
+Rain Dancer,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Druid Grove,Cast Create Water once per Short Rest.
+Reason's Grasp,Gloves,,The Risen Road,Gain ❤️(15) Temporary Hit Points when your Rage ends.
+Returning Pike,Pike,2h 🏹(1d10 + 1),Goblin Camp,This weapon will return to its owner when thrown.
+Ring of Absolute Force,Ring,,Grymforge,Cast Thunderwave once per Short Rest 
+Ring of Arcane Synergy,Ring,,Crèche Y'llek,"When you deal damage with a Cantrip, gain Arcane Synergy for 2 turns."
+Ring of Colour Spray,Ring,,Secluded Cove,Cast Colour Spray once per battle.
+Ring of Elemental Infusion,Ring,,Crèche Y'llek,"When you deal Acid, Cold, Fire, Lightning or Thunder damage with Spells or Cantrips, you deal an additional 🎲(1d4) damage of that element on your next succesful weapon attack, lasting until the end of your next turn."
+Ring of Fire,Ring,,Myconid Colony,"When you deal Fire damage, deal an additional 🔥(1)."
+Ring of Flinging,Ring,,Druid Grove,Gain 🎲(1d4) bonus to throw damage.
+Ring of Jumping,Ring,,Myconid Colony,Cast Enhance Leap once per Short Rest. 
+Ring of Mind-Shielding,Ring,,Myconid Colony,Advantage on Saving Throws against being Charmed.
+Ring of Poison Resistance,Ring,,Shattered Sanctum,Resistance to Poison damage.
+Ring of Protection,Ring,🛡️ + 1 AC,Druid Grove,Saving Throw +1
+Ring of Restorative Gravity,Ring,,Myconid Colony,"When you heal a creature, they are pulled 2m / 7ft towards you."
+Ring of Salving,Ring,,Myconid Colony,"When you heal a creature, you regain ❤️(2) Hit Points."
+Ritual Axe,Handaxe,1h 🔪(1d6),Shattered Sanctum,"On a hit, possibly inflict a 🎲(1d4) penalty to Attack Rolls and Saving Throws on target.
+If the attacker still has 25% or more Hit Points, they take 🏹(1d6) themselves."
+Ritual Dagger,Dagger,1h 🏹(1d4),Shattered Sanctum,"On a hit, receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws until the end of your next turn.
+Use a Bonus Action to take 🔪(1d4) and receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws. "
+Robe of Summer,Clothing,🛡️ 10 AC,Druid Grove,Resistance to Cold damage.
+Robust Chain Shirt,Medium Armour,🛡️ 13 AC,Grymforge,Deal 🏹(1d4) to the attackers that hit you with a melee attack while you're at 50% Hit Points or less.
+Rupturing Blade,Rapier,1h 🏹(1d8 + 1),Zhentarim Hideout,Gain Searing Blood weapon action.
+Safeguard Shield,Shield,🛡️ + 2 AC,Druid Grove,Saving Throws +1
+Sentient Amulet (Rare),Amulet,,Grymforge,"See wiki for risks when using this item.
+Cast Shatter once per Short Rest.
+Cast Ki Restoration once per Long Rest."
+Shadow of Menzoberranzan,Light Helmet,,Myconid Colony,You can become Invisible once per Long Rest for 2 turns.
+Shapeshifter's Boon Ring,Ring,,Druid Grove,Gain 🎲(1d4) bonus to all checks while shapeshifting or disguising yourself
+Shattered Flail,Mace,1h 🔨(1d6 + 2),The Risen Road,Regain ❤️(1d6) Hit Points when you hit an enemy. You can go Mad if you don't hit an enemy each turn.
+Shining Staver-of-Skulls,Light Hammer,1h 🔨(1d4 +1) + ☀️(1d4),Grymforge,
+Shortsword of First Blood,Shortsword,1h 🏹(1d6),Underdark,Deals an additional 🏹(1d8) to targets that still have all their Hit Points.
+Sickle of BOOOAL,Sickle,1h 🔪(2d4),The Festering Cove,"Advantage on Attack Rolls against Bleeding creatures, as long as there are Kuo-toa to worship BOOOAL."
+Silver Pendant,Amulet,,Druid Grove,Cast the Guidance cantrip.
+Skybreaker,Light Hammer,1h 🔨(1d4 + 1),Arcane Tower,Cast Searing Smite once per Long Rest.
+Slippery Chain Shirt,Medium Armour,🛡️ 13 AC,The Festering Cove,"When you heal a creature, it automatically Disengages and won't trigger Opportunity Attacks."
+Smuggler's Ring,Ring,,The Risen Road,"Stealth +2
+Sleight of Hand +2
+Charisma -1"
+Sorrow,Glaive,2h 🔪(1d10 + 1),Druid Grove,Cast Sorrowful Lash once per turn.
+Soulbreaker Greatsword,Greatsword,2h 🔪(2d6 + 1),Crèche Y'llek,"Deal an additional 👁️(1d4) if you are Githyanki.
+Gain a +2 bonus to Initiative Rolls."
+Speedy Reply,Scimitar,1h 🔪(1d6),The Risen Road,"On a hit, gain Momentum for 2 turns."
+Spellthief,Longbow,2h 🏹(1d8),Druid Grove,Regain a Level 1 Spell Slot when you land a Critical hit with the Spellthief once per Short Rest.
+Spidersilk Armour,Light Armour,🛡️ 12 AC,Shattered Sanctum,"Stealthy: Gain +1 bonus to Stealth Checks.
+Advantage on Constitution Saving Throws."
+Spiderstep Boots,Boots,,Whispering Depths,Immune to being Enwebbed. Your Movement Speed is not affected by web surfaces.
+Springstep Boots,Boots,,Shattered Sanctum,"When you Dash or take a similar action, gain Momentum for 3 turns."
+Spurred Band,Ring,,Whispering Depths,"When you start your turn with 50% Hit Points or less, gain Momentum for 1 turn."
+Staff of Arcane Blessing,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Arcane Tower,"Bless becomes Mystra's Blessing. 
+Mystra's Blessing grants an additional 🎲(1d4) to Weapon Attack Rolls and Saving Throws, and an additional 🎲(2d4) to Spell Attack Rolls.
+Cast Bless (Mystra's Blessing) once per Long Rest"
+Staff of Crones,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Ancient Abode,Cast Ray of Sickness once per Short Rest.
+Strange Conduit Ring,Ring,,Crèche Y'llek,Deal an additional 👁️(1d4) with weapon attacks while you are Concentrating on a spell.
+Sunwalker's Gift,Ring,,Myconid Colony,Gain Darkvision.
+Sussur Dagger,Dagger,1h 🏹(1d4 + 1),Blighted Village,"On a hit, Silence target."
+Sussur Greatsword,Greatsword,2h 🔪(2d6 + 1),Blighted Village,"On a hit, Silence target."
+Sussur Sickle,Sickle,1h 🔪(1d4 + 1),Blighted Village,"On a hit, Silence target."
+Svartlebee's Woundseeker,Greatsword,2h 🔪(2d6 + 1),Waukeen's Rest,Gains a 🎲(1d4) bonus to Attack Rolls with this weapon when attacking creatures that have already taken damage.
+Swiresy Shoes,Boots,,Goblin Camp,"Jump distance is increased by 1.5m / 5ft.
+Acrobatics +1"
+Sword of Justice,Greatsword,2h 🔪(2d6 + 1),Risen Road Toll House,Cast Shield of Faith once per Long Rest.
+Sword of Screams,Rapier,1h 🏹(1d8) + 👁️(1d4),Grymforge,
+Tarnished Charm,Amulet,,Druid Grove,The DC of Death Saving Throws for the wearer is lowered from 10 to 5.
+The Amulet of Lost Voices,Amulet,,Dank Crypt,Cast Speak with Dead once per Long Rest.
+The Baneful,Shortsword,1h 🏹(1d6 + 1),Myconid Colony,"The Warlock bound to this weapon is always Proficient with it. The weapon's damage is magical.
+Gain a +1 bonus to damage and Attack Rolls with this weapon.
+On a hit, possibly inflict Bane your target."
+The Blast Pendant,Amulet,,Selûnite Outpost,Use a Bonus Action to consume Lightning Charges to deal additional damage on your next Lightning Spell or Cantrip once per Long Rest.
+The Blood of Lathander,Mace,1h 🔨(1d6 + 3),Crèche Y'llek,"Regain ❤️(2d6) Hit Points when your Hit Points are reduced to 0 once per Long Rest. Allies within 9m also regain ❤️(1d6) Hit Points.
+This weapon shines with a glowing light in a radius of 6m. In combat, fiends and undead standing in the light are Blinded.
+Cast Sunbeam once per Long Rest."
+The Deathstalker Mantle,Cloak,,The Dark Urge Origin,"You can become Invisible for 2 turns after killing an enemy, once per turn."
+The Ever-Seeing Eye,Amulet,,Gnarled Teahouse,Cast Protection from Evil and Good once per Short Rest.
+The Graceful Cloth (Esther),Clothing,"🛡️ 10 AC
+🛡️ + 1 AC",Rosymorn Monastery Trail,"Gain a +1 bonus to Dexterity Saving Throws.
+Jump distance is increased by 1.5m / 5ft.
+Dexterity +2 (up to 20)"
+The Joltshooter,Longbow,2h 🏹(1d8),Waukeen's Rest,"When you deal damage with this weapon, gain 2 Lightning Charges."
+The Jolty Vest,Medium Armour,🛡️ 13 AC,Zhentarim Hideout,"When you are hit with a melee attack while having Lightning Charges, the attacker must succeed a Dexterity Saving Throw or become Shocked.
+You take 1 less Slashing damage."
+The Lifebringer,Helmet,,Myconid Colony,Gain ❤️(3) Temporary Hit Points when you gain Lightning Charges.
+The Oakfather's Embrace,Medium Armour,🛡️ 13 AC,Owlbear Nest,Deal ☀️(1d6) to the attacker if they are undead. Attackers that are beasts receive an additional ☀️(1d6).
+The Protecty Sparkswall,Clothing,🛡️ 10 AC,Grymforge,"Gain a +1 bonus to Spell Save DC.
+Gain a +1 bonus to Saving Throws and 🛡️ + 1 AC when you have Lightning Charges."
+The Real Sparky Sparkswall,Shield,🛡️ + 2 AC,Grymforge,Use an Action to consume 3 Lightning Charges to Jolts nearby enemies and deal ⚡(1d4) once per Long Rest.
+The Shadespell Circlet,Helmet,,Myconid Colony,"While you are obscured in shadow, your spells gain a +1 bonus to Spell Save DC, making them more likely to succeed."
+The Skinburster,Halberd,2h 🔪(1d10 + 1),Crèche Y'llek,"On a hit, gain Force Conduit for 2 turns."
+The Sparkle Hands,Gloves,,Sunlit Wetlands,"On a hit with an unarmed attack, gain 2 Lightning Charges.
+Advantage on Aattack Rolls against metal constructs and enemies weaing metal armour while you have Lightning Charges."
+The Sparkswall,Ring,,Arcane Tower,"Immune to being Electrocuted.
+Resistance to Lightning damage."
+The Sparky Points,Trident,"1h 🏹(1d6)
+2h 🏹(1d8)",Waukeen's Rest,"When you deal damage with this weapon, gain 2 Lightning Charges."
+The Spectator Eyes,Amulet,,Underdark,"Cast Ray of Fear once per Long Rest.
+Cast Wounding Ray once per Long Rest."
+The Speedy Lightfeet,Medium Boots,,Blighted Village,"When you Dash or take a similar action, gain 3 Lightning Charges.
+Athletics +1"
+The Spellsparkler,Quarterstaff,"1h 🔨(1d6)
+2h 🔨(1d8)",Waukeen's Rest,"When you deal damage with a spell or cantrip, gain 2 Lightning Charges."
+The Watcher's Guide,Spear,"1h 🏹(1d6)
+2h 🏹(1d8)",Dank Crypt,"On a miss, the next Attack Roll against that target gains True Strike."
+The Watersparkers,Boots,,Shattered Sanctum,"Water becomes electrified when you stand in it during combat.
+When you start your turn on an electrified surface, gain 3 Lightning Charges."
+The Whispering Promise,Ring,,Goblin Camp,"When you heal a creature, grant them Bless for 10 turns."
+Titanstring Bow,Longbow,2h 🏹(1d8 + 1),Zhentarim Hideout,Deal an additional 🎲(Strength Modifier) with this weapon.
+Uncovered Mysteries,Amulet,,Arcane Tower,Cast Detect Thoughts once per Long Rest.
+Unseen Menace,Pike,2h 🏹(1d10 + 1),Crèche Y'llek,"This weapon is Invisible while equipped. It loses this property for 2 turns on a missed Attack Rolls.
+While Invisible, you are Immune to Disarm, gain Advantage on Attack Rolls and you land a Critical Hit when rolling a 19."
+Varsh Ko'kuu's Boots,Boots,,Crèche Y'llek,"Immune to Acidic Surfaces.
+Resistance to Acid damage."
+Very Heavy Greataxe,Greataxe,2h 🔪(1d12),Blighted Village,Gain Gargantuan Cleave weapon action.
+Vision of the Absolute,Spear,"1h 🏹(1d6)
+2h 🏹(1d8)",Druid Grove/Ownbear Nest,"On a hit, the target must succeed a Dexterity Saving Throw or become Blinded. 
+Deals an additional 🏹(2d6) to creatures that have multiple sets of eyes."
+Vital Conduit Boots,Medium Boots,,Crèche Y'llek,"Gain ❤️(8) temporary Hit Points when you cast a Spell that requires Concentration.
+Athletics +1"
+Wapira's Crown,Helmet,,Druid Grove,Regain ❤️(1d6) Hit Points when you heal another creature.
+Warped Headband of Intellect,Helmet,,Blighted Village,Increases Intelligence to 17.
+Watcher's Shield,Shield,🛡️ + 2 AC,House of Healing,Advantage on Perception Checks.
+Winter's Clutches,Gloves,,Rosymorn Monastery Trail,"When you deal Cold damage, inflict Encrusted with Frost for 2 turns."
+Witchbreaker,Battleaxe,"1h 🔪(1d8 + 1)
+2h 🔪(1d10 + 1)",Crèche Y'llek,Advantage on Attack Rolls against concentrating creatures.
+Wondrous Gloves,Gloves,🛡️ + 1 AC,Grymforge,Gain 1 more use of Bardic Inspiration.
+Wood Woad Shield,Shield,🛡️ + 2 AC,Sunlit Wetlands,Use a Bonus Action to attack and possibly Ensnare your target once per Short Rest.
+Worgfang,Dagger,1h 🏹(1d4),Goblin Camp,Goblins have Disadvantage on Attack Rolls against you.
+Xyanyde,Mace,1h 🔨(1d6),Shattered Sanctum,"On a miss, automatically Cast Faerie Fire on the target (for 2 turns) once per Short Rest."

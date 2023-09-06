@@ -37,7 +37,7 @@ const Checklist = () => {
 }, [selectedItems]);
 
   useEffect(() => {
-    fetch('/checklistData.json')
+    fetch('./checklistData.json')
       .then(response => response.json())
       .then(data => setChecklistData(data.acts))
       .catch(err => console.error('Error fetching data:', err));

@@ -12,7 +12,7 @@ const ItemList = () => {
     console.log('ItemList useEffect executed'); // Log when useEffect runs
 
     // Fetch the CSV file
-    fetch('/itemData.csv') // Assuming the CSV file is in the public directory
+    fetch('./itemData.csv') // Assuming the CSV file is in the public directory
       .then(response => response.text())
       .then(result => {
         // Parse the CSV data using PapaParse
