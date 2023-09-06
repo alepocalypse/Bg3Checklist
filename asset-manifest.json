@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bg3Checklist/static/css/main.c0d15368.css",
+    "main.js": "/Bg3Checklist/static/js/main.62e6d02e.js",
+    "index.html": "/Bg3Checklist/index.html",
+    "main.c0d15368.css.map": "/Bg3Checklist/static/css/main.c0d15368.css.map",
+    "main.62e6d02e.js.map": "/Bg3Checklist/static/js/main.62e6d02e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0d15368.css",
+    "static/js/main.62e6d02e.js"
+  ]
+}

@@ -1,0 +1,276 @@
+{
+    "acts": [
+        {
+            "name": "Act 1",
+            "expanded": true,
+            "header": "Act 1",
+            "areas": [
+                {
+                    "name": "Nautiloid",
+                    "header": "Nautiloid",
+                    "checklist": [
+                        { "text": "Save the brain in 2nd Room", "completed": false, "url": "https://bg3.wiki/wiki/Us" },
+                        { "text": "Free Shadowheart", "completed": false },
+                        { "text": "Defeat Commander Zhalk and get his sword.", "completed": false, "url": "https://baldursgate3.wiki.fextralife.com/Everburn+Blade" }
+                    ]
+                },
+                {
+                    "name": "Crash Site",
+                    "header": "Crash Site",
+                    "checklist": [
+                        { "text": "Recruit Shadowheart", "completed": false },
+                        { "text": "Recruit Astarion", "completed": false },
+                        { "text": "Recruit Gale", "completed": false },
+                        { "text": "Free Lae’zel", "completed": false },
+                        { "text": "Complete Dank Crypt and meet Withers", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Druids Grove",
+                    "header": "Druids Grove",
+                    "checklist": [
+                        { "text": "Defend the Grove", "completed": false },
+                        { "text": "Recruit Wyll", "completed": false },
+                        { "text": "Speak to Volo", "completed": false },
+                        { "text": "Talk to Khaga and Rath", "completed": false },
+                        { "text": "Talk to Arbella's Parents", "completed": false },
+                        { "text": "Interact with the Strange Ox", "completed": false },
+                        { "text": "Talk to Alfira", "completed": false },
+                        { "text": "Talk to Dammon", "completed": false },
+                        { "text": "Stop the Assassination", "completed": false },
+                        { "text": "Rescue on the Beach", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Blighted Village",
+                    "header": "Blighted Village",
+                    "checklist": [
+                        { "text": "Find the Masterwork Weapon blueprints at the blacksmith’s home", "completed": false },
+                        { "text": "Search the Herbalist", "completed": false },
+                        { "text": "Down the Well", "completed": false },
+                        { "text": "Rescue at the Windmill", "completed": false },
+                        { "text": "Find Scratch the Dog", "completed": false },
+                        { "text": "Deal with the Ogres", "completed": false },
+                        { "text": "Love in the Barn", "completed": false },
+                        { "text": "Owlbear cave", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Risen Road",
+                    "header": "Risen Road",
+                    "checklist": [
+                        { "text": "Recruit Karlach", "completed": false },
+                        { "text": "Handle Karlach's foes", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Waukeen’s Rest",
+                    "header": "Waukeen’s Rest",
+                    "checklist": [
+                        { "text": "Clear the burning building", "completed": false },
+                        { "text": "Save the Caravan", "completed": false },
+                        { "text": "Head to the Hideout", "completed": false },
+                        { "text": "Rescue the Artist", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Goblin Camp",
+                    "header": "Goblin Camp",
+                    "checklist": [
+                        { "text": "Rescue Volo", "completed": false },
+                        { "text": "Owlbear race + rescue", "completed": false },
+                        { "text": "Free Druid", "completed": false },
+                        { "text": "Rescue the tortured guy", "completed": false },
+                        { "text": "Talk to Abdirak", "completed": false },
+                        { "text": "Slay 3 True Souls", "completed": false },
+                        { "text": "Keep the LUTE", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Putrid Bog",
+                    "header": "Putrid Bog",
+                    "checklist": [
+                        { "text": "Save the lady", "completed": false },
+                        { "text": "Confront the hunter", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Underdark",
+                    "header": "Underdark",
+                    "checklist": [
+                        { "text": "Find the Selunite outpost.", "completed": false },
+                        { "text": "Sword in Stone", "completed": false },
+                        { "text": "Find the Arcane Tower", "completed": false },
+                        { "text": "In Arcane Tower break the Stool of Mysterious Strength", "completed": false },
+                        { "text": "In Arcane Tower get the Gith Disk", "completed": false },
+                        { "text": "Spectate a stoned drow", "completed": false },
+                        { "text": "Festering Cove", "completed": false },
+                        { "text": "Obtain the Sergeant’s boots, a gnome stole them.", "completed": false },
+                        { "text": "Complete the Mushroom People colony", "completed": false },
+                        { "text": "Help Gut with the Duergar, if she is still around", "completed": false },
+                        { "text": "Gnome in colony needs help", "completed": false },
+                        { "text": "Rescue a dumb dwarf", "completed": false },
+                        { "text": "A very rare item in the boom mushrooms try and save it, give it to dumb dwarf, Shadowheart, or Durge", "completed": false },
+                        { "text": "Meet Omellum in the Myconid Colony", "completed": false },
+                        { "text": "Find Sussur Bark then head back to the Blacksmith Shop in Blighted Village", "completed": false },
+                        { "text": "Find Icy Metal, Icy Heave, and Icy Crystal", "completed": false, "url": "https://bg3.wiki/wiki/Mourning_Frost"}
+                    ]
+                },
+                {
+                    "name": "Grymforge",
+                    "header": "Grymforge",
+                    "checklist": [
+                        { "text": "Save the Grymforge Gnomes", "completed": false },
+                        { "text": "Find the Runepowder Gnome, past the hidden kitchen area.", "completed": false },
+                        { "text": "Find the Adamantine Forge and two pieces of Mithril Ore. Then defeat Grym", "completed": false },
+                        { "text": "Help the cursed monk", "completed": false },
+                        { "text": "Eliminate Nere", "completed": false },
+                        { "text": "Taking the lift down to Shadow-Cursed Lands ends Act 1, be sure you are done questing as some NPCs move", "completed": false, "warning": true }
+                    ]
+                },
+                {
+                    "name": "Mountain Pass",
+                    "header": "Mountain Pass",
+                    "checklist": [
+                        { "text": "Speak with Elminster outside the entrance to the Shadow-Cursed Lands", "completed": false },
+                        { "text": "Going into Shadow-Cursed Lands ends Act 1, be sure you are done questing as some NPCs move", "completed": false },
+                        { "text": "Complete the Githyanki Creche", "completed": false },
+                        { "text": "Deal with the merchant woman who wants an egg", "completed": false },
+                        { "text": "Find the Blood of Lathander", "completed": false }
+                    ]
+                }
+            ]
+        },
+        {
+             "name": "Act 2",
+            "expanded": false,
+            "header": "Act 2",
+            "areas": [
+                {
+                    "name": "Shadow Cursed Lands",
+                    "header": "Shadow Cursed Lands",
+                    "checklist": [
+                        { "text": "Meet He-Who-Was", "completed": false },
+                        { "text": "Play a game in the ‘House with Flowers'", "completed": false },
+                        { "text": "Explore the abandoned potter’s workshop", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Last Light Inn",
+                    "header": "Last Light Inn",
+                    "checklist": [
+                        { "text": "Meet Dammon again", "completed": false },
+                        { "text": "That darn ox again", "completed": false },
+                        { "text": "Get a key from Mattis", "completed": false },
+                        { "text": "Speak to Jaheira again", "completed": false },
+                        { "text": "Speak to Alfira", "completed": false },
+                        { "text": "Speak to Rolan", "completed": false },
+                        { "text": "Speak to the cat", "completed": false },
+                        { "text": "Interupt Mol's chess game", "completed": false },
+                        { "text": "Bottom floor, find Art. Do his stuff in House of Healing before talking to Isobel", "completed": false },
+                        { "text": "Find a way into the cellar", "completed": false },
+                        { "text": "Ambush a caravan", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Reithwin",
+                    "header": "Reithwin",
+                    "checklist": [
+                        { "text": "Investigate the central pillar", "completed": false },
+                        { "text": "Talk to Arabella", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Mason Guild",
+                    "header": "Mason Guild",
+                    "checklist": [
+                        { "text": "Did you spot that NPC? Weird right?", "completed": false },
+                        { "text": "Resistance stuff", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Tollhouse",
+                    "header": "Tollhouse",
+                    "checklist": [
+                        { "text": "Deal with gold guy", "completed": false },
+                        { "text": "Get around the barricades", "completed": false },
+                        { "text": "Unlock the safes", "completed": false }
+                    ]
+                },
+                {
+                    "name": "House of Healing",
+                    "header": "House of Healing",
+                    "checklist": [
+                        { "text": "Speak with dead on two tieflings", "completed": false },
+                        { "text": "Deal with Dr. Thorm", "completed": false },
+                        { "text": "Explore the library at the top floor", "completed": false },
+                        { "text": "Check out the morgue", "completed": false }
+                    ]
+                },
+                {
+                    "name": "The Waning Moon",
+                    "header": "The Waning Moon",
+                    "checklist": [
+                        { "text": "Grab the ledger for He-Who-Was", "completed": false },
+                        { "text": "Deal with the bartender", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Moonrise Tower",
+                    "header": "Moonrise Tower",
+                    "checklist": [
+                        { "text": "Be nice to the kitchen staff", "completed": false },
+                        { "text": "Interact with the ogre on the ground floor", "completed": false },
+                        { "text": "Speak with the weapons & armor merchant", "completed": false },
+                        { "text": "Save and talk to all the prisoners in the basement", "completed": false },
+                        { "text": "Balthazar’s room. Book puzzle and bring Gale.", "completed": false },
+                        { "text": "Ketheric’s room", "completed": false },
+                        { "text": "Ketheric’s daughter’s room.", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Grand Mausoleum",
+                    "header": "Grand Mausoleum",
+                    "checklist": [
+                        { "text": "Talk to the devil you know", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Gauntlet of Shar",
+                    "header": "Gauntlet of Shar",
+                    "checklist": [
+                        { "text": "Meet Balth and his brother", "completed": false },
+                        { "text": "Ralph's old friend dealt with", "completed": false },
+                        { "text": "Complete all 3 trials", "completed": false },
+                        { "text": "Explore the library read the books, solve the puzzle", "completed": false },
+                        { "text": "Speak to the rat at the bottom of the statue", "completed": false },
+                        { "text": "The portal to Nightsong is the end of Act2 and wildly cuts you off from Act1 and 2 content Be sure you are ready to move on", "completed": false }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Act 3",
+            "expanded": false,
+            "header": "Act 3",
+            "areas": [
+                {
+                    "name": "Area 1",
+                    "header": "Area 1",
+                    "checklist": [
+                        { "text": "Placeholder Checklist Item 1", "completed": false },
+                        { "text": "Placeholder Checklist Item 2", "completed": false }
+                    ]
+                },
+                {
+                    "name": "Area 2",
+                    "header": "Area 2",
+                    "checklist": [
+                        { "text": "Placeholder Checklist Item 1", "completed": false },
+                        { "text": "Placeholder Checklist Item 2", "completed": false }
+                    ]
+                }
+            ]
+        }
+    ]
+}
